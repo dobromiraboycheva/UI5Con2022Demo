@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(o){"use strict";return o.extend("smart.controls.demo.controller.controller.App",{onInit(){}})});

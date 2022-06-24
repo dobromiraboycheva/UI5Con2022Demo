@@ -1,0 +1,118 @@
+<mvc:View
+  controllerName="smart.controls.demo.controller.DetailView"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns:smartForm="sap.ui.comp.smartform"
+  xmlns:smartField="sap.ui.comp.smartfield"
+>
+  <App>
+    <Page id="idPage" title="Product" class="sapUiResponsivePadding--header" showNavButton="true"
+          navButtonPress=".onNavBack">
+      <content>
+        <ObjectHeader title="{ProductName} {ProductCode}" backgroundDesign="Solid" id="objectHeader"/>
+        <smartForm:SmartForm id="smartForm" editable="false">
+          <smartForm:layout>
+            <smartForm:ColumnLayout columnsM="2" columnsL="3" columnsXL="4"/>
+          </smartForm:layout>
+          <smartForm:Group>
+            <smartForm:GroupElement>
+              <smartField:SmartField id="ProductName" value="{ProductName}"/>
+            </smartForm:GroupElement>
+          </smartForm:Group>
+          <smartForm:Group>
+            <smartForm:GroupElement>
+              <smartField:SmartField id="Produced" value="{Produced}"/>
+            </smartForm:GroupElement>
+          </smartForm:Group>
+          <smartForm:Group>
+            <smartForm:GroupElement>
+              <smartField:SmartField id="Sold" value="{Sold}"/>
+            </smartForm:GroupElement>
+          </smartForm:Group>
+          <smartForm:Group>
+            <smartForm:GroupElement>
+              <smartField:SmartField id="SoldPercent" value="{SoldPercent}"/>
+            </smartForm:GroupElement>
+          </smartForm:Group>
+        </smartForm:SmartForm>
+        <IconTabBar selectedKey="headerView" id="iconTabBar" class="sapUiResponsiveContentPadding">
+          <items>
+            <IconTabFilter key="europe" text="Europe">
+              <smartForm:SmartForm id="smartFormEurope" title="" editable="false" editTogglable="true">
+                <smartForm:layout>
+                  <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
+                </smartForm:layout>
+                <smartForm:Group>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="CurrencyEurope" value="{Currency}"/>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+                <smartForm:Group>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="QuantityEurope" value="{Quantity}"/>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+                <smartForm:Group>
+                  <smartForm:GroupElement label="Production time">
+                    <smartField:SmartField id="timezoneEurope" value="{ProductionTimeEurope}">
+                      <smartField:customData>
+                        <core:CustomData key="dateFormatSettings" value='\{"style":"short"}'/>
+                      </smartField:customData>
+                    </smartField:SmartField>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+              </smartForm:SmartForm>
+            </IconTabFilter>
+            <IconTabFilter key="asia" text="Asia">
+              <smartForm:SmartForm id="smartFormAsia" title="" editable="false" editTogglable="true">
+                <smartForm:layout>
+                  <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
+                </smartForm:layout>
+                <smartForm:Group>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="CurrencyAsia" value="{Currency}"/>
+                  </smartForm:GroupElement>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="QuantityAsia" value="{Quantity}"/>
+                  </smartForm:GroupElement>
+
+                  <smartForm:GroupElement label="Production time">
+                    <smartField:SmartField id="timezoneAsia" value="{ProductionTimeAsia}">
+                      <smartField:customData>
+                        <core:CustomData key="dateFormatSettings" value='\{"style":"short"}'/>
+                      </smartField:customData>
+                    </smartField:SmartField>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+              </smartForm:SmartForm>
+            </IconTabFilter>
+            <IconTabFilter key="america" text="America">
+              <smartForm:SmartForm id="smartFormAmerica" title="" editable="false" editTogglable="true">
+                <smartForm:layout>
+                  <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
+                </smartForm:layout>
+                <smartForm:Group>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="CurrencyAmerica" value="{Currency}"/>
+                  </smartForm:GroupElement>
+                  <smartForm:GroupElement>
+                    <smartField:SmartField id="QuantityAmerica" value="{Quantity}"/>
+                  </smartForm:GroupElement>
+
+                  <smartForm:GroupElement label="Production time">
+                    <smartField:SmartField id="timezoneAmerica" value="{ProductionTimeAmerica}">
+                      <smartField:customData>
+                        <core:CustomData key="dateFormatSettings" value='\{"style":"short"}'/>
+                      </smartField:customData>
+                    </smartField:SmartField>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+              </smartForm:SmartForm>
+            </IconTabFilter>
+          </items>
+        </IconTabBar>
+      </content>
+    </Page>
+  </App>
+</mvc:View>

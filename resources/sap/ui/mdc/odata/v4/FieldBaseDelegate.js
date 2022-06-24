@@ -1,0 +1,6 @@
+/*
+ * ! OpenUI5
+ * (c) Copyright 2009-2022 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/mdc/field/FieldBaseDelegate","sap/ui/mdc/odata/v4/TypeUtil"],function(e,t){"use strict";var i=Object.assign({},e);i.getDataTypeClass=function(e,i){return t.getDataTypeClassName(i)};i.getBaseType=function(e,i,n,a){return t.getBaseType(i,n,a)};i.initializeTypeFromBinding=function(e,t,i){var n={};if(t&&(t.isA("sap.ui.model.odata.type.Unit")||t.isA("sap.ui.model.odata.type.Currency"))&&Array.isArray(i)&&i.length>2&&i[2]!==undefined){t.formatValue(i,"string");n.bTypeInitialized=true;n.mCustomUnits=i[2]}return n};i.initializeInternalUnitType=function(e,t,i){if(i&&i.mCustomUnits!==undefined){t.formatValue([null,null,i.mCustomUnits],"string")}};i.enhanceValueForUnit=function(e,t,i){if(i&&i.bTypeInitialized&&t.length===2){t.push(i.mCustomUnits);return t}};i.getDefaultFieldValueHelpDelegate=function(e){return{name:"sap/ui/mdc/odata/v4/FieldValueHelpDelegate",payload:{}}};i.getTypeUtil=function(e){return t};return i});

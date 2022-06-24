@@ -1,0 +1,6 @@
+/*
+ * ! OpenUI5
+ * (c) Copyright 2009-2022 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Element"],function(e){"use strict";var t=e.extend("sap.ui.mdc.table.TableTypeBase",{metadata:{library:"sap.ui.mdc",properties:{}}});t.prototype.setProperty=function(t,a,i){e.prototype.setProperty.call(this,t,a,true);var r=this.getRelevantTable();if(r){this.updateRelevantTableProperty(r,t,a)}return this};t.prototype.updateRelevantTableProperty=function(e,t,a){};t.prototype.getRelevantTable=function(){var e=this.getParent();if(e&&e.isA("sap.ui.mdc.Table")){e=e._oTable}else{e=null}return e};t.prototype.updateTableSettings=function(e){var t=Object.assign({},e,this.getMetadata().getProperties()),a,i=this.getRelevantTable();if(i){for(a in t){this.updateRelevantTableProperty(i,a,this.getProperty(a))}}};t.getSelectionMode=function(e){var t=e.getSelectionMode();switch(t){case"Single":t=e._bMobileTable?"SingleSelectLeft":"Single";break;case"Multi":t=e._bMobileTable?"MultiSelect":"MultiToggle";break;default:t="None"}return t};return t});

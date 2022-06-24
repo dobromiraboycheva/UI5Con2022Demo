@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2022 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/base/Log","sap/ui/fl/changeHandler/condenser/Classification"],function(e,t){"use strict";var n={};n.applyChange=function(e,t,n){var r=e.getDefinition();var i=r.content.property;var o=r.content.newBinding;var a=n.modifier;return Promise.resolve().then(a.getPropertyBindingOrProperty.bind(a,t,i)).then(function(n){e.setRevertData({originalValue:n});a.setPropertyBinding(t,i,o)})};n.revertChange=function(t,n,r){var i=t.getRevertData();if(i){var o=t.getDefinition();var a=o.content.property;var c=i.originalValue;var f=r.modifier;f.setPropertyBindingOrProperty(n,a,c);t.resetRevertData()}else{e.error("Attempt to revert an unapplied change.")}};n.completeChangeContent=function(e,t){var n=e.getDefinition();if(!t.content){throw new Error("oSpecificChangeInfo attribute required")}n.content=t.content};n.getCondenserInfo=function(e){return{affectedControl:e.getSelector(),classification:t.LastOneWins,uniqueKey:e.getContent().property}};return n},true);

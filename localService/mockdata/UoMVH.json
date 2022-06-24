@@ -1,0 +1,34 @@
+{
+  "d": {
+    "__count": "9",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('KG')",
+          "uri": "salesreport.SalesReport/UoMVH('KG')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "KG",
+        "UOMDESCR": "Kilogram"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('MG')",
+          "uri": "salesreport.SalesReport/UoMVH('MG')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "MG",
+        "UOMDESCR": "Milligram"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('G')",
+          "uri": "salesreport.SalesReport/UoMVH('G')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "G",
+        "UOMDESCR": "Gram"
+      }
+    ]
+  }
+}

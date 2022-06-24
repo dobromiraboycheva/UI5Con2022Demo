@@ -1,0 +1,5 @@
+/*
+ * ! SAPUI5
+ * (c) Copyright 2009-2022 SAP SE. All rights reserved.
+ */
+sap.ui.define(["sap/ui/comp/variants/VariantManagement"],function(t){"use strict";return{actions:{compVariant:function(e){return{validators:["noEmptyText",{validatorFunction:function(t){return!e.isNameDuplicate(t)},errorMessage:e.oResourceBundle.getText("VARIANT_MANAGEMENT_ERROR_DUPLICATE")},{validatorFunction:function(t){return!e.isNameTooLong(t)},errorMessage:e.oResourceBundle.getText("VARIANT_MANAGEMENT_MAX_LEN",[t.MAX_NAME_LEN])}]}}},aggregations:{personalizableControls:{propagateMetadata:function(){return{actions:"not-adaptable"}}}},annotations:{},properties:{persistencyKey:{ignore:true},entitySet:{ignore:true},displayTextForExecuteOnSelectionForStandardVariant:{ignore:false}},variantRenameDomRef:function(t){return t.getTitle().getDomRef("inner")},tool:{start:function(t){},stop:function(t){}},customData:{}}});

@@ -1,0 +1,83 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.f"
+  xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+  xmlns:smartTable="sap.ui.comp.smarttable"
+  xmlns:sv="sap.ui.comp.smartvariants"
+  controllerName="smart.controls.demo.controller.MainView"
+  height="100%"
+>
+  <App>
+    <f:DynamicPage fitContent="true">
+      <f:title>
+        <f:DynamicPageTitle>
+          <f:heading>
+            <sv:SmartVariantManagement id="__SVM01" persistencyKey="fiori.test.application2.view.S4" showShare="true"
+                                       showExecuteOnSelection="true" entitySet="ZSALESREPORT"/>
+          </f:heading>
+          <f:snappedContent>
+            <Text id="statusText"/>
+          </f:snappedContent>
+        </f:DynamicPageTitle>
+      </f:title>
+      <f:header>
+        <f:DynamicPageHeader>
+          <f:content>
+            <smartFilterBar:SmartFilterBar
+              entitySet="ZSALESREPORT"
+              id="smartFilterBar"
+              smartVariant="__SVM01"
+              useToolbar="false"
+              useDateRangeType="true"
+              persistencyKey="fiori.test.application2.view.S4.FilterBar"
+              enableBasicSearch="true"
+              basicSearchFieldName="ProductCode"
+              initialized=".onSFBinitialized"
+              assignedFiltersChanged=".onAssignedFiltersChanged"
+              beforeVariantSave=".onBeforeVariantSave"
+              afterVariantLoad=".onAfterVariantLoad"
+            >
+              <smartFilterBar:controlConfiguration>
+                <smartFilterBar:ControlConfiguration key="ProductCode" visibleInAdvancedArea="true"/>
+                <smartFilterBar:ControlConfiguration key="DateProduction"
+                                                     conditionType="sap.ui.comp.config.condition.DateRangeType"
+                                                     visibleInAdvancedArea="true"/>
+                <smartFilterBar:ControlConfiguration key="DocumentDate"
+                                                     conditionType="sap.ui.comp.config.condition.DateRangeType"
+                                                     visibleInAdvancedArea="true"/>
+                <smartFilterBar:ControlConfiguration key="CreationDateTime"
+                                                     conditionType="sap.ui.comp.config.condition.DateRangeType"
+                                                     visibleInAdvancedArea="true"/>
+              </smartFilterBar:controlConfiguration>
+            </smartFilterBar:SmartFilterBar>
+          </f:content>
+        </f:DynamicPageHeader>
+      </f:header>
+      <f:content>
+        <smartTable:SmartTable
+          id="ItemsST"
+          entitySet="ZSALESREPORT"
+          smartFilterId="smartFilterBar"
+          tableType="ResponsiveTable"
+          showFullScreenButton="true"
+          header="Sales Report"
+          showRowCount="true"
+          beforeExport=".onBeforeExport"
+          smartVariant="__SVM01"
+          enableAutoBinding="true"
+          demandPopin="true"
+          persistencyKey="fiori.test.application2.view.S4.FilterBar"
+          beforeRebindTable=".onBeforeRebindTable"
+        >
+          <Table growing="true" sticky="ColumnHeaders,HeaderToolbar">
+            <items>
+              <ColumnListItem type="Navigation" press=".onDetailNavigationPress">
+              </ColumnListItem>
+            </items>
+          </Table>
+        </smartTable:SmartTable>
+      </f:content>
+    </f:DynamicPage>
+  </App>
+</mvc:View>

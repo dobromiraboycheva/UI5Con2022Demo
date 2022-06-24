@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2022 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define([],function(){"use strict";var t={};t.render=function(t,e){var i=sap.ui.getCore().getConfiguration().getAccessibility();var r=sap.ui.getCore().getLibraryResourceBundle("sap.ui.commons");t.write('<span id="'+e.getId()+'-Descr" style="visibility: hidden; display: none; outline: none;">');t.writeEscaped(r.getText("IMAGEMAP_DSC"));t.write("</span>");t.write("<map tabindex='-1'");t.writeControlData(e);t.writeAttributeEscaped("name",e.getName());if(e.getTooltip_AsString()){t.writeAttributeEscaped("title",e.getTooltip_AsString())}t.write(">");var a=e.getAreas();for(var s=0,n=a.length;s<n;s++){t.write("<area ");t.writeElementData(a[s]);t.write(' style="display: inline;"');if(i){t.writeAttribute("aria-describedby",e.getId()+"-Descr")}var o=a[s].getShape();var d=a[s].getCoords();var p=a[s].getHref();var u=a[s].getAlt();var l=a[s].getTooltip_AsString();if(o==="rect"||o==="circle"||o==="poly"){t.writeAttribute("shape",o)}else{t.writeAttribute("shape","default")}if(d){t.writeAttributeEscaped("coords",d)}if(p){t.writeAttributeEscaped("href",p)}if(u){t.writeAttributeEscaped("alt",u)}if(l){t.writeAttributeEscaped("title",l)}t.writeAttribute("tabindex",0);t.write(">")}t.write("</map>")};return t},true);

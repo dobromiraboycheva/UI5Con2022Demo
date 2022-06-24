@@ -1,0 +1,5 @@
+/*
+ * ! SAPUI5
+ * (c) Copyright 2009-2022 SAP SE. All rights reserved.
+ */
+sap.ui.define([],function(){"use strict";var e={};e.applyChange=function(e,n,r){var t=r.modifier;var o=r.view;var i=t.getParent(n);var a;var g;return Promise.resolve().then(t.findIndexInParentAggregation(n)).then(function(e){g=e;if(t.getControlType(i)==="sap.ui.layout.form.Form"){a="formContainers";return t.removeAggregation(i,"formContainers",n,o)}a="groups";return t.removeAggregation(i,"groups",n,o)}).then(t.insertAggregation.bind(t,i,"dependents",n,0,o)).then(function(){e.setRevertData({groupIndex:g,aggregation:a})})};e.completeChangeContent=function(e,n){var r=e.getDefinition();if(!r.content){r.content={}}};e.revertChange=function(e,n,r){var t=r.view;var o=r.modifier;var i=e.getRevertData();var a=o.getParent(n);return Promise.resolve().then(o.removeAggregation.bind(o,a,"dependents",n)).then(o.insertAggregation.bind(o,a,i.aggregation,n,i.groupIndex,t)).then(e.resetRevertData.bind(e))};return e},true);
