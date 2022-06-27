@@ -28,7 +28,7 @@ sap.ui.define(
         // simulate against the metadata and mock data
         oMockServer.simulate("localService/mockdata/metadata.xml", {
           sMockdataBaseUrl: "localService/mockdata",
-          aEntitySetsNames: ["ZSALESREPORT", "ProductCodeVH", "UoMVH", "SAP__UnitsOfMeasure", "CurrencyCodeVH", "SAP__Currencies"],
+          aEntitySetsNames: ["ZSALESREPORT", "ProductCodeVH", "UoMVH", "SAP__UnitsOfMeasure", "CurrencyCodeVH", "SAP__Currencies", "ClockInTimezoneEuropeVH", "ClockInTimezoneAmericaVH", "ClockInTimezoneAsiaVH"],
         });
 
         // start

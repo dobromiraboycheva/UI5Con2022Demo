@@ -118,15 +118,84 @@
         <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneEurope"/>
       </Annotations>
 
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneEurope" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneEurope"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneEuropeVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneEurope"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneEuropeKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneEuropeDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+
       <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductionTimeAsia"
                    xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneAsia"/>
       </Annotations>
 
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneAsia" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneAsia"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneAsiaVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneAsia"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAsiaKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAsiaDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+
       <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductionTimeAmerica"
                    xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneAmerica"/>
       </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneAmerica" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneAmerica"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneAmericaVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneAmerica"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAmericaKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAmericaDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
 
       <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/Unit">
         <Annotation Term="UI.DataFieldDefault">

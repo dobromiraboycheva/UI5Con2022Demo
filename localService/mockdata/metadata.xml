@@ -39,6 +39,10 @@
         <Property Name="ProductionTimeAmerica" Type="Edm.DateTimeOffset" sap:updatable="true"
                   sap:label="Time in America"/>
 
+        <Property Name="ClockInTimezoneEurope" Type="Edm.String"/>
+        <Property Name="ClockInTimezoneAsia" Type="Edm.String"/>
+        <Property Name="ClockInTimezoneAmerica" Type="Edm.String"/>
+
         <Property Name="DateProduction" Type="Edm.DateTime" sap:display-format="Date"
                   sap:filter-restriction="single-value" sap:label="Date of Production"/>
         <Property Name="DocumentDate" Type="Edm.DateTime" sap:filter-restriction="interval" sap:label="Document Date"/>
@@ -53,6 +57,28 @@
         <Property Name="ProductCode" Type="Edm.String" Nullable="false" sap:text="ProductName" MaxLength="10"
                   sap:label="Product Code"/>
         <Property Name="ProductName" Type="Edm.String" Nullable="false" sap:label="Product Name"/>
+      </EntityType>
+
+      <EntityType Name="ClockInTimezoneEuropeVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneEuropeKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneEuropeKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneEuropeDESCR" Type="Edm.String" sap:label="Timezone"/>
+      </EntityType>
+      <EntityType Name="ClockInTimezoneAsiaVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneAsiaKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneAsiaKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneAsiaDESCR" Type="Edm.String" sap:label="Timezone"/>
+      </EntityType>
+      <EntityType Name="ClockInTimezoneAmericaVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneAmericaKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneAmericaKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneAmericaDESCR" Type="Edm.String" sap:label="Timezone"/>
       </EntityType>
 
       <EntityType Name="UoMVHType" sap:content-version="1">
@@ -98,6 +124,9 @@
                    sap:content-version="1"/>
         <EntitySet Name="ProductCodeVH" EntityType="ZSALESREPORT_CDS.ProductCodeVHType"/>
         <EntitySet Name="UoMVH" EntityType="ZSALESREPORT_CDS.UoMVHType"/>
+        <EntitySet Name="ClockInTimezoneEuropeVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"/>
+        <EntitySet Name="ClockInTimezoneAsiaVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneAsiaVHType"/>
+        <EntitySet Name="ClockInTimezoneAmericaVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneAmericaVHType"/>
         <EntitySet Name="SAP__UnitsOfMeasure" EntityType="ZSALESREPORT_CDS.SAP__UnitsOfMeasure"/>
         <EntitySet Name="CurrencyCodeVH" EntityType="ZSALESREPORT_CDS.CurrencyCodeVHType"/>
         <EntitySet Name="SAP__Currencies" EntityType="ZSALESREPORT_CDS.SAP__Currency"/>

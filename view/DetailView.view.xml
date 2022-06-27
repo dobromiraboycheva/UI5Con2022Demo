@@ -62,6 +62,12 @@
                     </smartField:SmartField>
                   </smartForm:GroupElement>
                 </smartForm:Group>
+                <smartForm:Group>
+                  <smartForm:GroupElement label="Timezone">
+                    <smartField:SmartField id="clockInTimezoneEurope" value="{ClockInTimezoneEurope}">
+                    </smartField:SmartField>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
               </smartForm:SmartForm>
             </IconTabFilter>
             <IconTabFilter key="asia" text="Asia">
@@ -73,10 +79,13 @@
                   <smartForm:GroupElement>
                     <smartField:SmartField id="CurrencyAsia" value="{Currency}"/>
                   </smartForm:GroupElement>
+                </smartForm:Group>
+                <smartForm:Group>
                   <smartForm:GroupElement>
                     <smartField:SmartField id="QuantityAsia" value="{Quantity}"/>
                   </smartForm:GroupElement>
-
+                </smartForm:Group>
+                <smartForm:Group>
                   <smartForm:GroupElement label="Production time">
                     <smartField:SmartField id="timezoneAsia" value="{ProductionTimeAsia}">
                       <smartField:customData>
@@ -85,6 +94,12 @@
                     </smartField:SmartField>
                   </smartForm:GroupElement>
                 </smartForm:Group>
+                  <smartForm:Group>
+                    <smartForm:GroupElement label="Timezone">
+                      <smartField:SmartField id="clockInTimezoneAsia" value="{ClockInTimezoneAsia}">
+                      </smartField:SmartField>
+                    </smartForm:GroupElement>
+                  </smartForm:Group>
               </smartForm:SmartForm>
             </IconTabFilter>
             <IconTabFilter key="america" text="America">
@@ -96,15 +111,24 @@
                   <smartForm:GroupElement>
                     <smartField:SmartField id="CurrencyAmerica" value="{Currency}"/>
                   </smartForm:GroupElement>
+                </smartForm:Group>
+                <smartForm:Group>
                   <smartForm:GroupElement>
                     <smartField:SmartField id="QuantityAmerica" value="{Quantity}"/>
                   </smartForm:GroupElement>
-
+                </smartForm:Group>
+                <smartForm:Group>
                   <smartForm:GroupElement label="Production time">
                     <smartField:SmartField id="timezoneAmerica" value="{ProductionTimeAmerica}">
                       <smartField:customData>
                         <core:CustomData key="dateFormatSettings" value='\{"style":"short"}'/>
                       </smartField:customData>
+                    </smartField:SmartField>
+                  </smartForm:GroupElement>
+                </smartForm:Group>
+                <smartForm:Group>
+                  <smartForm:GroupElement label="Timezone">
+                    <smartField:SmartField id="clockInTimezoneAmerica" value="{ClockInTimezoneAmerica}">
                     </smartField:SmartField>
                   </smartForm:GroupElement>
                 </smartForm:Group>
