@@ -17,7 +17,7 @@ sap.ui.define(['sap/ui/core/ElementMetadata'],
 	 *
 	 * @class
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.30.0
 	 * @alias sap.viz.ui5.core.BaseChartMetadata
 	 */

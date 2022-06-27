@@ -21,14 +21,14 @@ sap.ui.define(['sap/ui/base/DataType', 'sap/base/util/ObjectPath',
 	 * @namespace
 	 * @alias sap.ui.commons
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 0.8
 	 * @public
 	 * @deprecated as of version 1.38
 	 */
 	var thisLib = sap.ui.getCore().initLibrary({
 		name : "sap.ui.commons",
-		version: "1.102.1",
+		version: "1.102.0",
 		dependencies : ["sap.ui.core","sap.ui.layout","sap.ui.unified"],
 		types: [
 			"sap.ui.commons.ButtonStyle",

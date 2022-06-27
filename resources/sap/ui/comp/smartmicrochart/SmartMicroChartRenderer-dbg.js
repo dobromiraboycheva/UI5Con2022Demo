@@ -7,7 +7,7 @@ sap.ui.define([], function() {
 	/**
 	 * SmartMicroChart renderer.
 	 * @namespace
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.38.0
 	 */
 	var SmartMicroChartRenderer = {

@@ -21,12 +21,12 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.suite.ui.microchart
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @public
 	 */
 	var thisLib = sap.ui.getCore().initLibrary({
 		name: "sap.suite.ui.microchart",
-		version: "1.102.1",
+		version: "1.102.0",
 		// library dependencies
 		dependencies: ["sap.ui.core", "sap.m"],
 		types: [

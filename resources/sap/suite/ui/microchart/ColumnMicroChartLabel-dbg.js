@@ -18,7 +18,7 @@ sap.ui.define(['./library',	'sap/ui/core/Element'],
 	 * Displays or hides the labels of a column micro chart.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.34
 	 *
 	 * @public

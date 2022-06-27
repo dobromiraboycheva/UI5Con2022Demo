@@ -42,7 +42,7 @@ sap.ui.define([
 	 * @class Extension for sap.ui.table.TableRenderer which handles ACC related things.
 	 * @extends sap.ui.table.extensions.ExtensionBase
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @alias sap.ui.table.extensions.AccessibilityRender

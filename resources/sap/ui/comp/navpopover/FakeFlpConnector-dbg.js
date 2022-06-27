@@ -12,7 +12,7 @@ sap.ui.define([
 	 * @namespace FakeFlpConnector.
 	 * @name sap.ui.comp.navpopover.FakeFlpConnector
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @since 1.58.0
 	 * @ui5-metamodel This control/element also will be described in the UI5 (legacy) designtime metamodel

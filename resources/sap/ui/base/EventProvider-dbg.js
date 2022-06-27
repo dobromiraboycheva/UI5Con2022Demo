@@ -18,7 +18,7 @@ sap.ui.define(['./Event', './Object', './ObjectPool', "sap/base/assert"],
 	 * @abstract
 	 * @extends sap.ui.base.Object
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @public
 	 * @alias sap.ui.base.EventProvider
 	 */

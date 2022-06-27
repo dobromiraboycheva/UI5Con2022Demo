@@ -17,7 +17,7 @@ sap.ui.define([
 	/**
 	 * @private
 	 * @ui5-restricted sap.ui.comp.p13n.P13nFilterPanel
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @alias sap.ui.comp.p13n.P13nOperationsHelper
 	 */
 	var P13nOperationsHelper = function () {

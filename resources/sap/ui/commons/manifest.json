@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.102.1"
+      "version": "1.102.0"
     },
     "title": "Common basic controls, mainly intended for desktop scenarios",
     "description": "Common basic controls, mainly intended for desktop scenarios",
@@ -37,13 +37,13 @@
       "minUI5Version": "1.102",
       "libs": {
         "sap.ui.core": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         },
         "sap.ui.layout": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         },
         "sap.ui.unified": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         }
       }
     },

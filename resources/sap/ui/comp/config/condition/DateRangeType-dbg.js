@@ -32,7 +32,6 @@ sap.ui.define([
 	'sap/m/DynamicDateValueHelpUIType',
 	"sap/m/StandardDynamicDateOption",
 	'sap/base/util/UriParameters',
-	"sap/ui/comp/util/DateTimeUtil",
 	// jQuery Plugin "cursorPos"
 	"sap/ui/dom/jquery/cursorPos"
 ], function(
@@ -63,8 +62,7 @@ sap.ui.define([
 	CustomDynamicDateOption,
 	DynamicDateValueHelpUIType,
 	StandardDynamicDateOption,
-	UriParameters,
-	DateTimeUtil
+	UriParameters
 ) {
 	"use strict";
 
@@ -1829,12 +1827,6 @@ sap.ui.define([
 
 	DateRangeType.prototype.initialize = function(oJson) {
 		Type.prototype.initialize.apply(this, [oJson]);
-		if (this.oDateFormat && this.oDateFormat.UTC && oJson.value1 instanceof Date){
-			oJson.value1 = DateTimeUtil.localToUtc(oJson.value1);
-		}
-		if (this.oDateFormat && this.oDateFormat.UTC && oJson.value2 instanceof Date){
-			oJson.value2 = DateTimeUtil.localToUtc(oJson.value2);
-		}
 		this.oModel.suspend();
 		var oOrgJson = Object.assign({}, oJson, true),
 		oSemanticValue1,

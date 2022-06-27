@@ -13,7 +13,7 @@ sap.ui.define([], function() {
 	 *
 	 * @module
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @experimental This module is only for internal/experimental use!
 	 * @static

@@ -92,7 +92,7 @@ sap.ui.define([
 	 *     the data model and binding being used.
 	 * </p>
 	 * @extends sap.ui.core.Control
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @public

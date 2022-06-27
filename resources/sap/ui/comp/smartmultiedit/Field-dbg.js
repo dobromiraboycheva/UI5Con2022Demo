@@ -110,7 +110,7 @@ sap.ui.define([
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @public
 	 * @since 1.52.0
@@ -1173,25 +1173,6 @@ sap.ui.define([
 
 	/**
 	 * @private
-	 * @returns array of string values of inner controls if inner control(s) are present
-	 */
-	Field.prototype._fnGetInnerValuesHelper = function() {
-		var result = [this._getFirstInnerEdit().getValue()];
-		var oSecondInnerEdit = this._getSecondInnerEdit();
-		if (oSecondInnerEdit instanceof ComboBox) {
-			result.push(oSecondInnerEdit.getSelectedKey());
-		} else {
-			// Case: When uom field is rendered but is hidden.
-			// in such case oSecondInnerEdit will be null, hence adding the check.
-			if (oSecondInnerEdit) {
-				result.push(oSecondInnerEdit.getValue());
-			}
-		}
-		return result;
-	};
-
-	/**
-	 * @private
 	 */
 	Field.prototype._performValidation = function () {
 		// Manual reset, dunno why SmartField doesn't reset itself within checkClientError method
@@ -1208,7 +1189,12 @@ sap.ui.define([
 				var oValueBinding = aInnerControl[0].getBinding("value");
 				var oGetValueBackup = oValueBinding.getValue;
 
-				oValueBinding.getValue = this._fnGetInnerValuesHelper.bind(this);
+				oValueBinding.getValue = function() {
+					var sFirstValue = this._getFirstInnerEdit().getValue();
+					var sSecondValue = this._getSecondInnerEdit() instanceof ComboBox ? this._getSecondInnerEdit().getSelectedKey() : this._getSecondInnerEdit().getValue();
+
+					return [sFirstValue, sSecondValue];
+				}.bind(this);
 
 				this._bClientError = this._oSmartField.checkClientError({ handleSuccess: true });
 
@@ -1242,9 +1228,8 @@ sap.ui.define([
 	 * @private
 	 */
 	Field.prototype._handleCompositeInputChange = function (oEvent) {
-		var aInnerValues = this._fnGetInnerValuesHelper(),
-			sFirstValue = aInnerValues[0],
-			sSecondValue = aInnerValues[1] || '',
+		var sFirstValue = this._getFirstInnerEdit().getValue(),
+			sSecondValue = this._getSecondInnerEdit() instanceof ComboBox ? this._getSecondInnerEdit().getSelectedKey() : this._getSecondInnerEdit().getValue(),
 			sFormattedValue;
 
 		if (this._isCurrencyValue()) {
@@ -1346,7 +1331,7 @@ sap.ui.define([
 
 			// Some data types need special serialization to compare
 			if (this.isComposite()) {
-				oUnit = this.getModel().getObject(oContext.getPath())[this.getUnitOfMeasurePropertyName()] || '';
+				oUnit = this.getModel().getObject(oContext.getPath())[this.getUnitOfMeasurePropertyName()];
 				oUomPair = {value: oValue, unit: oUnit};
 				if (this._aDistinctValues.map(JSON.stringify).indexOf(JSON.stringify(oUomPair)) === -1) {
 					this._aDistinctValues.push(oUomPair);

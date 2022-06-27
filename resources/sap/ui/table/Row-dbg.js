@@ -135,7 +135,7 @@ sap.ui.define([
 	 * @class
 	 * The row.
 	 * @extends sap.ui.core.Element
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @public

@@ -26,7 +26,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new element
 	 * @class Content for the {@link sap.ui.mdc.valuehelp.base.Container Container} element showing a list with fix values.
 	 * @extends sap.ui.mdc.valuehelp.base.ListContent
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @abstract
 	 * @private

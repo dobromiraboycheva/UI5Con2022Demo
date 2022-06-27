@@ -13,7 +13,8 @@ sap.ui.define([
 	'sap/ui/base/ManagedObjectMetadata',
 	'sap/ui/core/HTML',
 	'sap/m/CustomListItem',
-	'sap/base/security/encodeXML'
+	'sap/base/security/encodeXML',
+	'sap/base/util/UriParameters'
 ],
 	function(
 		BaseObject,
@@ -23,7 +24,8 @@ sap.ui.define([
 		ManagedObjectMetadata,
 		HTML,
 		CustomListItem,
-		encodeXML
+		encodeXML,
+		UriParameters
 	) {
 	"use strict";
 
@@ -68,7 +70,7 @@ sap.ui.define([
 			this._aChunk = [];
 			this._oRM = null;
 
-			if (document.location.href.search("sap-ui-xx-enableItemsPool") > 0) {
+			if (UriParameters.fromQuery(window.location.href).get("sap-ui-xx-enableItemsPool") === "true") {
 				this._aItemsPool = [];
 			}
 		},
@@ -417,29 +419,16 @@ sap.ui.define([
 
 		// render all the collected items in the chunk and flush them into the DOM
 		// vInsert whether to append (true) or replace (falsy) or to insert at a certain position (int)
-		applyChunk : function(vInsert, bAsync) {
+		applyChunk : function(vInsert) {
 			if (!this._oControl) {
 				return;
 			}
 
 			this.applyPendingGroupItem();
 
-			var iTimer = this._iChunkTimer;
 			var iLength = this._aChunk.length;
 			var oDomRef = this._oControl.getItemsContainerDomRef();
-
-			if (iTimer) {
-				this._iChunkTimer = clearTimeout(iTimer);
-			}
-
 			if (!iLength || !oDomRef || !this._oControl.shouldRenderItems()) {
-				this._aChunk = [];
-				return;
-			}
-
-			if (iTimer && !bAsync) {
-				this._oControl.invalidate();
-				this._aChunk = [];
 				return;
 			}
 
@@ -465,8 +454,8 @@ sap.ui.define([
 
 		// async version of applyChunk
 		applyChunkAsync : function(vInsert) {
-			if (this._bApplyChunkAsync) {
-				this._iChunkTimer = setTimeout(this.applyChunk.bind(this, vInsert, true));
+			if (this._bNonClientModel) {
+				setTimeout(this.applyChunk.bind(this, vInsert));
 			} else {
 				this.applyChunk(vInsert);
 			}
@@ -507,26 +496,23 @@ sap.ui.define([
 		 * refresh items only for OData model.
 		 */
 		refreshItems : function(sChangeReason) {
-			var oControl = this._oControl;
-			var oBinding = oControl.getBinding("items");
-
-			// the value of the ODataV4PropertyBinding created during the template clone gets resolved asynchronously
-			this._bApplyChunkAsync = oBinding.isA("sap.ui.model.odata.v4.ODataListBinding") && oControl.checkGrowingFromScratch();
-
-			// if the data is not already requested then let the updateStarted event to be fired
+			this._bNonClientModel = true;
 			if (!this._bDataRequested) {
 				this._bDataRequested = true;
 				this._onBeforePageLoaded(sChangeReason);
 			}
 
 			// set iItemCount to initial value if not set or no items at the control yet
-			if (!this._iLimit || this.shouldReset(sChangeReason) || !oControl.getItems(true).length) {
-				this._iLimit = oControl.getGrowingThreshold();
+			if (!this._iLimit || this.shouldReset(sChangeReason) || !this._oControl.getItems(true).length) {
+				this._iLimit = this._oControl.getGrowingThreshold();
+
 			}
 
-			// pre-initialize items during the request is ongoing
+			// send the request to get the context
+			var oBinding = this._oControl.getBinding("items");
+
 			if (this._aItemsPool) {
-				if (oControl._bBusy) {
+				if (this._oControl._bBusy) {
 					setTimeout(this.fillItemsPool.bind(this));
 				} else {
 					oBinding.attachEventOnce("dataRequested", function() {
@@ -535,7 +521,6 @@ sap.ui.define([
 				}
 			}
 
-			// send the request to get the context
 			oBinding.getContexts(0, this._iLimit);
 		},
 

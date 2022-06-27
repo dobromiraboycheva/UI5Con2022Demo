@@ -32,7 +32,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.fl.apply._internal.flexObjects.FlexObjectFactory
 	 * @since 1.100
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl
 	 */

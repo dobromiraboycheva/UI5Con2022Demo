@@ -64,7 +64,7 @@ sap.ui.define([
 	 * @extends sap.ui.core.Control
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.34.0
 	 *
 	 * @public
@@ -211,12 +211,7 @@ sap.ui.define([
 				 * @experimental
 				 * @since 1.95
 				 */
-				valueColor: {type: "sap.m.ValueColor", group: "Appearance", defaultValue: "None"},
-				/**
-				 * The load state of the tileIcon.
-				 * @experimental
-				 */
-				iconLoaded: {type: "boolean", group: "Misc", defaultValue: true}
+				valueColor: {type: "sap.m.ValueColor", group: "Appearance", defaultValue: "None"}
 			},
 			defaultAggregation: "tileContent",
 			aggregations: {
@@ -630,28 +625,8 @@ sap.ui.define([
 			this._addClassesForButton();
 		}
 
-		//Adds Extra height to the TileContent when GenericTile is in ActionMode
-		if (this.getFrameType()  === FrameType.TwoByOne && this.getMode() === GenericTileMode.ActionMode) {
-			this._applyExtraHeight();
-		}
-
 		this.onDragComplete();
 	};
-	/**
-	 * Increases the height of the TileContent when the header-text has one line
-	 * @private
-	 */
-	GenericTile.prototype._applyExtraHeight = function(){
-		var iHeight = this.getDomRef("hdr-text").offsetHeight,
-			iLineHeight = parseInt(getComputedStyle(this.getDomRef("title")).lineHeight.slice(0,2)),
-			iHeaderLines = Math.ceil(iHeight / iLineHeight);
-		if (iHeaderLines === 1 && !this.getHeaderImage()) {
-			this.getDomRef("content").classList.add("sapMGTFtrMarginTop");
-		} else {
-			this.getDomRef("content").classList.remove("sapMGTFtrMarginTop");
-		}
-	};
-
 	GenericTile.prototype._setMaxLines = function() {
 		var sFrameType = this.getFrameType(),
 			iLines = sFrameType === FrameType.OneByOne || sFrameType === FrameType.TwoByHalf ? 1 : 2;
@@ -1677,16 +1652,9 @@ sap.ui.define([
 	 */
 	GenericTile.prototype._isIconMode = function () {
 		if (this.getMode() === GenericTileMode.IconMode
-			&& (this.getFrameType() === FrameType.OneByOne || this.getFrameType() === FrameType.TwoByHalf)){
-				if (this.getTileIcon() && this.getBackgroundColor()) {
-					return true;
-				} else {
-					if (!this.getIconLoaded()) {
-						return true;
-					} else {
-						return false;
-					}
-				}
+			&& (this.getFrameType() === FrameType.OneByOne || this.getFrameType() === FrameType.TwoByHalf)
+			&& this.getBackgroundColor() && this.getTileIcon()){
+			return true;
 		} else {
 			return false;
 		}

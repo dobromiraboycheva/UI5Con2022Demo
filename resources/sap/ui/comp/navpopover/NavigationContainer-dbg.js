@@ -686,7 +686,7 @@ sap.ui.define([
 	 * @private
 	 */
 	NavigationContainer.prototype._onLinkPress = function(oEvent) {
-		if (oEvent.getSource().getTarget() !== "_blank") {
+		if (oEvent.getParameter("target") !== "_blank") {
 			oEvent.preventDefault();
 		}
 		this.fireNavigate({

@@ -30,7 +30,7 @@ sap.ui.define([
 	 * <br>Note: You can assign a custom tooltip for this microchart. The custom tooltip can be set using expression binding. When no custom tooltip is defined, the tooltip is generated automatically based on the logic described in {@link sap.ui.core.Element#getTooltip_AsString}. For a combination of a generated and a custom tooltip, use <code>((AltText))</code> inside of the tooltip string. The aggregated data of the microchart can also be customized.
 	 * @extends sap.ui.core.Control
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.44.0
 	 *
 	 * @public

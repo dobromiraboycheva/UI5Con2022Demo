@@ -27,7 +27,7 @@ sap.ui.define([
 	 * @alias sap.ui.fl.registry.ChangeRegistryItem
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl
 	 * @experimental Since 1.27.0

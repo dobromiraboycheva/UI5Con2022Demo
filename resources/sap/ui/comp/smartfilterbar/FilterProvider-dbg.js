@@ -827,25 +827,16 @@ sap.ui.define([
 									if (oType) {
 
 										// For DateTime we can use the oType to format the value, because we have ensured that UTC=false
-										var bUtc = oFilterFieldMetadata.ui5Type && oFilterFieldMetadata.ui5Type.oFormatOptions &&
-											oFilterFieldMetadata.ui5Type.oFormatOptions.UTC;
 										if (value1) {
 											if (oFilterFieldMetadata.filterType === "time") {
 												value1 = DateTimeUtil.dateToEdmTime(DateTimeUtil.localToUtc(value1));
 											}
-											if (oFilterFieldMetadata.type === "Edm.DateTime" && oFilterFieldMetadata.filterType === "date" && !bUtc) {
-												value1 = DateTimeUtil.localToUtc(value1);
-											}
-
 											value1 = oType.formatValue(value1, "string", bRangeCondition);
 										}
 
 										if (value2) {
 											if (oFilterFieldMetadata.filterType === "time") {
 												value2 = DateTimeUtil.dateToEdmTime(DateTimeUtil.localToUtc(value2));
-											}
-											if (oFilterFieldMetadata.type === "Edm.DateTime" && oFilterFieldMetadata.filterType === "date" && !bUtc) {
-												value2 = DateTimeUtil.localToUtc(value2);
 											}
 											value2 = oType.formatValue(value2, "string", bRangeCondition);
 										}

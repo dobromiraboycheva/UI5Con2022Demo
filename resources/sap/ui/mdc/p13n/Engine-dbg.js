@@ -41,7 +41,7 @@ sap.ui.define([
 	 * @extends sap.ui.mdc.p13n.AdaptationProvider
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @private
 	 * @ui5-restricted sap.ui.mdc

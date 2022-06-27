@@ -31,7 +31,7 @@ sap.ui.define([
 	 *        SmartDeltaMicroChart does not have its own ChartType/Enum annotation.
 	 *        This means that ChartType annotation is not specified and SmartDeltaMicroChart cannot be created with a <code>SmartMicroChart</code>.</li></ul>
 	 * @extends sap.ui.comp.smartmicrochart.SmartMicroChartBase
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.61
 	 * @constructor
 	 * @public

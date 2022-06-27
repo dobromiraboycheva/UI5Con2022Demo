@@ -12,7 +12,7 @@ sap.ui.define([],
 	 *
 	 * @alias sap.ui.comp.smartform.flexibility.changes.SplitField
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.46
 	 */
 	var SplitField = {};

@@ -43,7 +43,7 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.fl.write._internal.condenser.Condenser
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 */
 	var Condenser = {};
 

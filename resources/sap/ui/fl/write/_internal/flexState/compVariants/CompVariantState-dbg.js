@@ -250,7 +250,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.fl.write._internal.flexState.compVariants.CompVariantState
 	 * @since 1.83
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl
 	 */

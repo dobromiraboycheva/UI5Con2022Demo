@@ -14,7 +14,7 @@ sap.ui.define([
 	 * Change handler for moving of fields within/between groups.
 	 * @alias sap.ui.comp.smartform.flexibility.changes.MoveFields
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.27.0
 	 */
 	var MoveFields = Object.assign({}, MoveControls);

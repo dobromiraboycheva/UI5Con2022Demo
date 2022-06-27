@@ -20,7 +20,7 @@ sap.ui.define([
 	 * @author Peter Muessig
 	 * @public
 	 * @since 1.15.0
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @alias sap.ui.core.plugin.TemplatingSupport
 	 */
 	var TemplatingSupport = function() {

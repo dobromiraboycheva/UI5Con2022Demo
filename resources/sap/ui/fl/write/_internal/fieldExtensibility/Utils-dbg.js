@@ -200,7 +200,7 @@ sap.ui.define([
 	 * @namespace sap.ui.fl.write._internal.fieldExtensibility.Utils
 	 * @experimental Since 1.87.0
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 */
 	var Utils = {};
 

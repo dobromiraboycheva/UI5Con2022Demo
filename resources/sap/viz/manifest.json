@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.102.1"
+      "version": "1.102.0"
     },
     "title": "Chart controls based on the SAP BI CVOM charting library",
     "description": "Chart controls based on the SAP BI CVOM charting library",
@@ -56,14 +56,14 @@
       "minUI5Version": "1.102",
       "libs": {
         "sap.ui.core": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         },
         "sap.m": {
-          "minVersion": "1.102.1",
+          "minVersion": "1.102.0",
           "lazy": true
         },
         "sap.ui.layout": {
-          "minVersion": "1.102.1",
+          "minVersion": "1.102.0",
           "lazy": true
         }
       }

@@ -20,7 +20,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.fl.apply._internal.changes.descriptor.fiori.SetRegistrationIds
 	 * @experimental
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl.apply._internal
 	 */

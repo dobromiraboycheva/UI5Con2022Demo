@@ -14,7 +14,7 @@ sap.ui.define([], function() {
 	 * @classdesc Analyzes OData Side-Effects annotation.
 	 * @author SAP SE
 	 * @experimental to be productized soon
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.31.0
 	 * @alias sap.ui.comp.odata.SideEffects
 	 */

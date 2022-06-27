@@ -18,7 +18,7 @@ sap.ui.define([
 	 *
 	 * @extends sap.ui.mdc.filterbar.FilterBarBase
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @since 1.80.0

@@ -32,7 +32,7 @@ sap.ui.define([
 	 * @class TODO (don't forget to document fixed row count restrictions because fixed rows are set by this plugin)
 	 * @extends sap.ui.table.plugins.PluginBase
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @since 1.76
 	 * @experimental

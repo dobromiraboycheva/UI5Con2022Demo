@@ -20,7 +20,7 @@ sap.ui.define(['sap/base/Log', 'sap/ui/core/Core'],
 	 * @extends sap.ui.unified.MenuItemBase
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.0.0
 	 *
 	 * @deprecated as of version 1.21.0, replaced by {@link sap.ui.unified.MenuItemBase}

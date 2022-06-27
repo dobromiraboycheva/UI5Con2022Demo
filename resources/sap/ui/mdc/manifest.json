@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.102.1"
+      "version": "1.102.0"
     },
     "title": "UI5 library: sap.ui.mdc",
     "description": "UI5 library: sap.ui.mdc",
@@ -31,13 +31,13 @@
       "minUI5Version": "1.102",
       "libs": {
         "sap.ui.core": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         },
         "sap.m": {
-          "minVersion": "1.102.1"
+          "minVersion": "1.102.0"
         },
         "sap.ui.layout": {
-          "minVersion": "1.102.1",
+          "minVersion": "1.102.0",
           "lazy": true
         }
       }

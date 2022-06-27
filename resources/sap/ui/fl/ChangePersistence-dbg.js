@@ -64,7 +64,7 @@ sap.ui.define([
 	 *
 	 * @constructor
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.25.0
 	 * @param {object} mComponent - Component data to initiate <code>ChangePersistence</code> instance
 	 * @param {string} mComponent.name - Name of the component this instance is responsible for

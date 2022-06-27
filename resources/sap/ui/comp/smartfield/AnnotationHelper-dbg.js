@@ -9,7 +9,7 @@
  *
  * @name sap.ui.comp.smartfield.AnnotationHelper
  * @author SAP SE
- * @version 1.102.1
+ * @version 1.102.0
  * @private
  * @since 1.29.0
  * @return {sap.ui.comp.smartfield.AnnotationHelper} the annotation access class.

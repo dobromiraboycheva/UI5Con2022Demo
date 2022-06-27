@@ -25,7 +25,7 @@ sap.ui.define([
 	 * @class The ContactDetails control is used to show additional information like for example 'contact details'.
 	 * @extends sap.ui.core.Control
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @since 1.56.0

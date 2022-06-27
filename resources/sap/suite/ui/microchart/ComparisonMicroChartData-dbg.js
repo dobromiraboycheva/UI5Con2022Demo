@@ -17,7 +17,7 @@ sap.ui.define(['./library', 'sap/ui/core/Element', 'sap/ui/core/Control'],
 	 * Contains the values of the comparison chart.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.34
 	 *
 	 * @constructor

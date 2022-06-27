@@ -52,8 +52,7 @@ sap.ui.define([
 	'sap/ui/comp/p13n/P13nOperationsHelper',
 	"sap/ui/core/format/NumberFormat",
 	"sap/ui/core/ResizeHandler",
-	'sap/base/strings/whitespaceReplacer',
-	"sap/ui/comp/util/DateTimeUtil"
+	'sap/base/strings/whitespaceReplacer'
 ], function(
 	Core,
 	Log,
@@ -102,8 +101,7 @@ sap.ui.define([
 	P13nOperationsHelper,
 	NumberFormat,
 	ResizeHandler,
-	whitespaceReplacer,
-	DateTimeUtil
+	whitespaceReplacer
 ) {
 	"use strict";
 
@@ -258,7 +256,7 @@ sap.ui.define([
 				 *
 				 * @since 1.84.1
 				 */
-				maxConditions : {
+				 maxConditions : {
 					type: "string",
 					group: "Misc",
 					defaultValue: '-1'
@@ -667,20 +665,6 @@ sap.ui.define([
 							sKey = "range_" + n;
 							n++;
 						} while (this._oSelectedRanges[sKey]);
-					}
-					var oCurrentKeyField = this._getKeyFieldByKey(range.keyField);
-					if (oCurrentKeyField && oCurrentKeyField.typeInstance &&
-						oCurrentKeyField.typeInstance.getMetadata().getName() === "sap.ui.model.odata.type.DateTime" &&
-						oCurrentKeyField.type === "date" &&
-						oCurrentKeyField.formatSettings &&
-						!oCurrentKeyField.formatSettings.UTC
-					){
-						if (range.value1){
-							range.value1 = DateTimeUtil.localToUtc(range.value1);
-						}
-						if (range.value2){
-							range.value2 = DateTimeUtil.localToUtc(range.value2);
-						}
 					}
 					var theTokenText = this._getFormatedRangeTokenText(range.operation, range.value1, range.value2, range.exclude, range.keyField);
 					this._addToken2Tokenizer(sKey, theTokenText, this._getTokenizer(), range.keyField);
@@ -2276,9 +2260,9 @@ sap.ui.define([
 				if (!this._isPhone()) {
 					// use UiTable
 
-					var oTable = new UiTable(this.getId() + "-table");
-					this.setTable(oTable, true);
-					fnResolve(oTable);
+						var oTable = new UiTable(this.getId() + "-table");
+						this.setTable(oTable, true);
+						fnResolve(oTable);
 				} else {
 					var oTable = new Table(this.getId() + "-table");
 					this.setTable(oTable, true);
@@ -2435,7 +2419,7 @@ sap.ui.define([
 			if (!this._oTable.getParent() || !this._oTable.getParent().isA("sap.ui.comp.smarttable.SmartTable")) {
 				this._oTable.bindAggregation("columns", "columns>/cols", function(sId, oContext) {
 					var ctrl, oTooltip, oColumn,
-						sTooltip = oContext.getProperty("tooltip");
+					sTooltip = oContext.getProperty("tooltip");
 
 					// Tooltip is only possible for certain (string) fields
 					// ignore it for all types other than string!
@@ -2717,7 +2701,7 @@ sap.ui.define([
 	 *
 	 * @private
 	 */
-	ValueHelpDialog.prototype._addInvisibleMessageSearchAndTableCount = function() {
+	 ValueHelpDialog.prototype._addInvisibleMessageSearchAndTableCount = function() {
 		var sInvisibleMessage = this._oRb.getText("VALUEHELPDLG_SEARCH_RESULT_COUNT", this.nRowCount);
 		this._oInvisibleMessage.announce(sInvisibleMessage, InvisibleMessageMode.Polite);
 		this._bTriggerInvisibleTableCountMessage = false;
@@ -2963,28 +2947,28 @@ sap.ui.define([
 			if (this._oSelectedRanges && this._oSelectedRanges[sKey]) {
 				aRangeTokenKeys.push(sKey);
 				this._removeToken(sKey);
-			} else {
-				// remove single selected item
-				this._oSelectedItems.remove(sKey);
-				this._removeTokenFromTokenizer(sKey, this._getTokenizer());
+				} else {
+					// remove single selected item
+					this._oSelectedItems.remove(sKey);
+					this._removeTokenFromTokenizer(sKey, this._getTokenizer());
+				}
 			}
-		}
 
-		// remove range tokens
-		this._removeRangeByKey(aRangeTokenKeys);
+			// remove range tokens
+			this._removeRangeByKey(aRangeTokenKeys);
 
-		var eventArgs = {
-			tokenKeys: [sKey],
-			useDefault: false
-		};
+			var eventArgs = {
+				tokenKeys: [sKey],
+				useDefault: false
+			};
 
-		if (this._hasListeners("tokenRemove")) {
-			this._bIgnoreSelectionChange = true;
-			this.fireTokenRemove(eventArgs);
-			this._bIgnoreSelectionChange = false;
-		} else {
-			eventArgs.useDefault = true;
-		}
+			if (this._hasListeners("tokenRemove")) {
+				this._bIgnoreSelectionChange = true;
+				this.fireTokenRemove(eventArgs);
+				this._bIgnoreSelectionChange = false;
+			} else {
+				eventArgs.useDefault = true;
+			}
 
 		if (eventArgs.useDefault) {
 			this._changeTableRowSelectionForKey(sKey, false);
@@ -3130,7 +3114,7 @@ sap.ui.define([
 					}
 					if (oType.oFormat) {
 						// if (oType.oFormatOptions.UTC == false && oType.oFormat.oFormatOptions.UTC == true) {
-						oType.oFormat.oFormatOptions.UTC = false;
+							oType.oFormat.oFormatOptions.UTC = false;
 						// }
 					}
 				}
@@ -3358,7 +3342,7 @@ sap.ui.define([
 
 	ValueHelpDialog.prototype._manageFocusAfterRemoveTokens = function() {
 		var oConditionsFirstInput,
-			oConditionPanel = this._oFilterPanel ? this._oFilterPanel.getConditionPanel() : undefined;
+		oConditionPanel = this._oFilterPanel ? this._oFilterPanel.getConditionPanel() : undefined;
 
 		if (this._currentViewMode.toLowerCase().indexOf("list") > -1) {
 			this._oButtonOk.focus();

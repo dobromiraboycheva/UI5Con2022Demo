@@ -22,7 +22,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new element
 	 * @class Content for the {@link sap.ui.mdc.valuehelp.base.Container Container} element to provide a value help for boolean fields.
 	 * @extends sap.ui.mdc.valuehelp.content.FixedList
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @abstract
 	 * @private

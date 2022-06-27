@@ -447,7 +447,7 @@ sap.ui.define([
 			}
 
 			if (sValue.indexOf('Z') !== (sValue.length - 1)) {
-				if (oFilterBar && (oFilterBar.isInUTCMode && !oFilterBar.isInUTCMode() || oFilterMetaData.isParameter)) {
+				if (oFilterBar && oFilterBar.isInUTCMode && !oFilterBar.isInUTCMode()) {
 					oValue = DateTimeUtil.localToUtc(this._createDateObject(sValue)).toJSON();
 				} else {
 					oValue = this._createDateObject(sValue).toJSON();

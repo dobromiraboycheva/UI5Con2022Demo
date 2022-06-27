@@ -264,7 +264,7 @@ sap.ui.define([
 	 * @class Variant model implementation for JSON format.
 	 * @extends sap.ui.model.json.JSONModel
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @param {object} oData - Either the URL where to load the JSON from or a JS object
 	 * @param {object} mPropertyBag - Map of properties required for the constructor
 	 * @param {sap.ui.fl.FlexController} mPropertyBag.flexController - <code>FlexController</code> instance for the component which uses the variant model

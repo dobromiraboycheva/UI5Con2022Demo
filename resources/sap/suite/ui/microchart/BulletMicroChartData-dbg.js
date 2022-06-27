@@ -17,7 +17,7 @@ sap.ui.define(['./library', 'sap/ui/core/Element'],
 	 * Contains the thresholds data.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.34
 	 *
 	 * @constructor

@@ -24,7 +24,7 @@ sap.ui.define([
 	 * The <code>RowActionItem</code> control represents a action for a row.
 	 * This control can only be used in the context of <code>sap.ui.mdc.Table</code> control to define row actions.
 	 * @extends sap.ui.core.Element
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @experimental

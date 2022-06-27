@@ -23,14 +23,14 @@
 	 * @namespace
 	 * @alias sap.ui.mdc
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.80
 	 * @private
 	 * @ui5-restricted sap.fe
 	 * @experimental As of version 1.54 Disclaimer: Usage Restrictions: The components of this library are under development and documented as private. Their APIs are subject to change and should not be used in productive scenarios without further agreement. A general availability of sap.ui.mdc will be announced via the usual channels.
 	 */
 	 var thisLib = sap.ui.getCore().initLibrary({
-		version: "1.102.1",
+		version: "1.102.0",
 		name: "sap.ui.mdc",
 		dependencies: ["sap.ui.core", "sap.m"],
 		designtime: "sap/ui/mdc/designtime/library.designtime",

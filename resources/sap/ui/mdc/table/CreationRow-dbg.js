@@ -21,7 +21,7 @@ sap.ui.define([
 	 * {@link sap.ui.mdc.table.Column#getCreationTemplate creationTemplate} aggregation of the {@link sap.ui.mdc.table.Column}.
 	 * @extends sap.ui.core.Element
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @experimental
 	 * @private
@@ -200,8 +200,6 @@ sap.ui.define([
 					this._onInnerApply, this
 				]
 			});
-
-			this._getTable()._oTable.getRowMode().setHideEmptyRows(this.getVisible());
 
 			for (var sModelName in this._mBindingContexts) {
 				var mBindingContext = this._mBindingContexts[sModelName];

@@ -34,7 +34,7 @@ sap.ui.define([
 	 *        Most properties are not dynamic and cannot be changed, once the control has been
 	 *        initialized.
 	 * @extends sap.ui.comp.smartmicrochart.SmartMicroChartBase
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.60
 	 * @constructor
 	 * @public

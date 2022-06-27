@@ -84,7 +84,7 @@ sap.ui.define([
 		 * @param {string} [oConfiguration.additionalInfo] additionalInfo text for the operator. Will be shown in the operator suggest as second column. If not used (undefined) the Include or Exclude information of the operator is used.
 		 * @constructor
 		 * @author SAP SE
-		 * @version 1.102.1
+		 * @version 1.102.0
 		 * @private
 		 * @ui5-restricted sap.fe
 		 * @MDC_PUBLIC_CANDIDATE

@@ -26,7 +26,7 @@ sap.ui.define([
 	 * @param {object} oFormatOptions format options.
 	 * @param {string} oFormatOptions.format format options.
 	 * @param {string} oFormatOptions.calendarType format options.
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental This module is only for internal/experimental use!
 	 * @private
 	 * @hideconstructor

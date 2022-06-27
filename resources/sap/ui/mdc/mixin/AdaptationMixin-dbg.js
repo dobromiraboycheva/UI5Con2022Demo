@@ -32,7 +32,7 @@ sap.ui.define(
          *
          *
          * @author SAP SE
-         * @version 1.102.1
+         * @version 1.102.0
          * @alias sap.ui.mdc.mixin.AdaptationMixin
          * @namespace
          * @since 1.82.0

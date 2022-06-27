@@ -8,7 +8,7 @@
  *
  * @name sap.ui.comp.smartfield.ControlFactoryBase
  * @author SAP SE
- * @version 1.102.1
+ * @version 1.102.0
  * @private
  * @since 1.28.0
  */

@@ -18,7 +18,7 @@ sap.ui.define(['sap/ui/core/Element'],
 	 * Contains the point of the line micro chart.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.48.0
 	 *
 	 * @constructor

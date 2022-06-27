@@ -145,7 +145,7 @@ sap.ui.define([
 	 * mobile devices, it opens in full screen.
 	 *
 	 * @extends sap.m.DatePicker
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @public
@@ -976,13 +976,14 @@ sap.ui.define([
 
 	DateTimePicker.prototype._getSelectedDate = function(){
 		var oDate = DatePicker.prototype._getSelectedDate.apply(this, arguments),
-			oDateTime,
-			sPattern;
+			sFormattedDate;
 
 		if (oDate) {
-			oDateTime = this._oClocks.getTimeValues();
-			sPattern = this._oClocks._getDisplayFormatPattern();
+			sFormattedDate = this._getPickerParser().format(oDate, TimezoneUtil.getLocalTimezone());
+			oDate = this._getPickerParser().parse(sFormattedDate, this._getTimezone(true))[0];
 
+			var oDateTime = this._oClocks.getTimeValues();
+			var sPattern = this._oClocks._getDisplayFormatPattern();
 			if (sPattern.search("h") >= 0 || sPattern.search("H") >= 0) {
 				oDate.setHours(oDateTime.getHours());
 			}

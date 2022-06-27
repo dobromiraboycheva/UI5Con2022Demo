@@ -20,7 +20,7 @@ sap.ui.define([
 	 * @param {object} oFormatOptions format options.
 	 * @param {object} oConstraints constraints.
 	 * @param {object} oSettings Settings.
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental
 	 * @private
 	 * @extends sap.ui.comp.smartfield.type.String

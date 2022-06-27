@@ -248,7 +248,7 @@ sap.ui.define([
 
 			//@@end generated-elements-list
 		],
-		version: "1.102.1"
+		version: "1.102.0"
 	});
 
 	//@@begin generated-enums

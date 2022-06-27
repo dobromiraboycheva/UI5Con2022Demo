@@ -9,7 +9,7 @@
  * @private
  * @name sap.ui.comp.smartfield.ODataControlSelector
  * @author SAP SE
- * @version 1.102.1
+ * @version 1.102.0
  * @since 1.28.0
  * @returns {sap.ui.comp.smartfield.ODataControlSelector} new control selector instance.
  */

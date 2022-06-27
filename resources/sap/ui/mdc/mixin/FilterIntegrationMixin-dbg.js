@@ -43,7 +43,7 @@ sap.ui.define([
 	 * </ul>
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @alias sap.ui.mdc.mixin.FilterIntegrationMixin
 	 * @namespace
 	 * @since 1.82.0

@@ -10,7 +10,7 @@ sap.ui.define([], function() {
 	 * Change handler for revealing a smart form group element.
 	 * @alias sap.ui.comp.smartform.flexibility.changes.UnhideControl
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.44.0
 	 */
 	var UnhideControl = { };

@@ -21,7 +21,7 @@ sap.ui.define(["sap/m/library", "sap/suite/ui/microchart/LineMicroChartPoint"],
 	 * Contains the emphasized point of the line micro chart.
 	 * @extends sap.suite.ui.microchart.LineMicroChartPoint
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.48.0
 	 *
 	 * @constructor

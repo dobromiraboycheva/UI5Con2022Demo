@@ -28,7 +28,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class The <code>TokenizerDisplay</code> control is used to render a Tokenizer inside a control based on {@link sap.ui.mdc.field.FieldBase FieldBase}.
 	 * @extends sap.m.Tokenizer
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @abstract
 	 * @private

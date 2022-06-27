@@ -175,7 +175,7 @@ function(
 		*
 		* @implements sap.ui.core.PopupInterface
 		* @author SAP SE
-		* @version 1.102.1
+		* @version 1.102.0
 		*
 		* @constructor
 		* @public
@@ -1244,7 +1244,7 @@ function(
 				$this = this.$(),
 				iHeaderHeight = $this.find(".sapMDialogTitle").height() || 0,
 				iSubHeaderHeight = $this.find(".sapMDialogSubHeader").height() || 0,
-				iFooterHeight = $this.find("> footer").height() || 0,
+				iFooterHeight = $this.find("footer").height() || 0,
 				iHeightAsPadding = iHeaderHeight + iSubHeaderHeight + iFooterHeight,
 				iMaxHeight,
 				iMaxWidth;

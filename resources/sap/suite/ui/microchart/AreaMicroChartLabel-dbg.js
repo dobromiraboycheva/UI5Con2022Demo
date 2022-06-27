@@ -17,7 +17,7 @@ sap.ui.define(['./library', 'sap/ui/core/Element'],
 	 * Displays or hides the labels for start and end dates, start and end values, and minimum and maximum values.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.34
 	 *
 	 * @public

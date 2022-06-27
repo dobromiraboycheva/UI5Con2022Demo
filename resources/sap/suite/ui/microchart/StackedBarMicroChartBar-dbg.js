@@ -20,7 +20,7 @@ sap.ui.define(["sap/ui/thirdparty/jquery", './library', 'sap/ui/core/Element', "
 	 * Contains the values of the stacked bar chart.
 	 * @extends sap.ui.core.Element
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.44.0
 	 *
 	 * @constructor

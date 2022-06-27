@@ -32,7 +32,7 @@ sap.ui.define([
 	 *        <br>
 	 * <b><i>Note:</i></b> Most of the attributes are not dynamic and cannot be changed once the control has been initialized.
 	 * @extends sap.ui.core.Control
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.38
 	 * @constructor
 	 * @public

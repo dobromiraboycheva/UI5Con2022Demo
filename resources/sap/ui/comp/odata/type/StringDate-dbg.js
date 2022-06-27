@@ -23,7 +23,7 @@ sap.ui.define([
 	 * @param {object} oFormatOptions format options.
 	 * @param {object} oConstraints constraints.
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental
 	 * @since 1.54.0
 	 * @extends sap.ui.model.SimpleType

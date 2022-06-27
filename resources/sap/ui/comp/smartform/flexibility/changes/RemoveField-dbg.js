@@ -10,7 +10,7 @@ sap.ui.define([], function() {
 	 * Change handler for removing a smart form group element.
 	 * @alias sap.ui.fl.changeHandler.RemoveField
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.27.0
 	 */
 	var RemoveField = { };

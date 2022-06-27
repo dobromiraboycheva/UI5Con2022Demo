@@ -27,7 +27,7 @@ sap.ui.define([
 	 * @class The personalization Controller provides capabilities in order to orchestrate the P13nDialog.
 	 * @extends sap.ui.base.ManagedObject
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @experimental This module is only for internal/experimental use!
 	 * @private

@@ -118,7 +118,7 @@ sap.ui.define([
 	 * @class The ConditionPanel Control will be used to to define filter-specific settings for {@link sap.ui.comp.valuehelpdialog.ValueHelpDialog} personalization
 	 * @param {string} [sId] ID for the new control, generated automatically if no ID is given
 	 * @param {object} [mSettings] initial settings for the new control
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental
 	 * @private
 	 * @extends sap.m.P13nConditionPanel

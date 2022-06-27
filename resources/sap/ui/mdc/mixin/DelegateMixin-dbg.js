@@ -61,7 +61,7 @@ sap.ui.define(["sap/ui/mdc/util/loadModules", "sap/base/Log"], function (loadMod
 	 * </ul>
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @alias sap.ui.mdc.mixin.DelegateMixin
 	 * @namespace
 	 * @since 1.76.0

@@ -14,7 +14,7 @@ sap.ui.define([
 	 * @class Creates a new instance of an UIState class.
 	 * @extends sap.ui.base.ManagedObject
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @public
 	 * @since 1.50

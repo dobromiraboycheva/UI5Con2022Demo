@@ -23,7 +23,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class Base type for <code>FieldValueHelp</code> content control wrapper.
 	 * @extends sap.ui.core.Element
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @abstract
 	 * @private

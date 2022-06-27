@@ -37,7 +37,7 @@ sap.ui.define([
 	 * supposed that the properties of the item structure is not changed.
 	 * @extends sap.ui.core.Control
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @since 1.54.0
@@ -163,8 +163,10 @@ sap.ui.define([
 	var oRB = sap.ui.getCore().getLibraryResourceBundle("sap.ui.mdc");
 
 	Panel.prototype.applySettings = function() {
+		var oModel = this._getInternalModel();
 		this._createContent();
 		Control.prototype.applySettings.apply(this, arguments);
+		oModel.setProperty("/countAdditionalContent", this.getAdditionalContent().length);
 	};
 
 	Panel.prototype.exit = function(oControl) {
@@ -186,6 +188,7 @@ sap.ui.define([
 				this._createFooterArea()
 			]
 		});
+		oVerticalLayout.setWidth("calc(100% - 2rem)");
 		this.setAggregation("_content", oVerticalLayout);
 	};
 

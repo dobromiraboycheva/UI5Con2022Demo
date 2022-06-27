@@ -33,7 +33,7 @@ sap.ui.define([
 		 * @param {int[]|function} [oConfiguration.defaultValues] Array of values for the defaults of <code>RangeOperators</code> parameter. This can be a function, which returns the array of values. If not used the default for the values is 1.
 		 * @constructor
 		 * @author SAP SE
-		 * @version 1.102.1
+		 * @version 1.102.0
 		 * @private
 		 * @ui5-restricted sap.fe
 		 * @MDC_PUBLIC_CANDIDATE

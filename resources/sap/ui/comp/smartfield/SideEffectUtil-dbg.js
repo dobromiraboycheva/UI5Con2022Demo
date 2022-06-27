@@ -11,7 +11,7 @@ sap.ui.define(["sap/ui/comp/odata/SideEffects"], function(SideEffects) {
 	 *
 	 * @param {sap.ui.core.Control} oParent the parent control
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @since 1.31.0
 	 * @class

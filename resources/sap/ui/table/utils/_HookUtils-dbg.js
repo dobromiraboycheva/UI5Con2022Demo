@@ -22,7 +22,7 @@ sap.ui.define(["sap/ui/base/DataType"], function(DataType) {
 	 * - There is no concept for public or protected hooks. Never expose a hook directly, only indirectly as can be seen in the examples.
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @alias sap.ui.table.utils._HookUtils
 	 *

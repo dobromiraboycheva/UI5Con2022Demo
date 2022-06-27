@@ -13,7 +13,7 @@ sap.ui.define(
 		 * Calling any of the enhanced methods after control exit will result in a no-op.
 		 *
 		 * @author SAP SE
-		 * @version 1.102.1
+		 * @version 1.102.0
 		 * @alias sap.ui.mdc.mixin.PromiseMixin
 		 * @namespace
 		 * @since 1.85.0

@@ -9,7 +9,7 @@ sap.ui.define([
 	"use strict";
 	/**
 	 * @class UoMValidateException is used to indicate that the ValueState target control is the UoM control.
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental
 	 * @private
 	 * @extends sap.ui.model.ValidateException

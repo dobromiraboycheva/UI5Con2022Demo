@@ -137,7 +137,7 @@ sap.ui.define([
 	 * Factory class to create controls that are hosted by <code>sap.ui.comp.smartfield.SmartField</code>.
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @extends sap.ui.comp.smartfield.ControlFactoryBase

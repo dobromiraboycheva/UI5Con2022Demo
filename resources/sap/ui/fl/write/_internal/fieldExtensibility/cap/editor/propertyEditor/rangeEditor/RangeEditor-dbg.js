@@ -20,7 +20,7 @@ sap.ui.define([
 	 * @alias sap.ui.fl.write._internal.fieldExtensibility.cap.editor.propertyEditor.rangeEditor.RangeEditor
 	 * @author SAP SE
 	 * @since 1.93
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @private
 	 * @experimental 1.93

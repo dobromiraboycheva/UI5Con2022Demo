@@ -152,7 +152,7 @@ sap.ui.define([
 	 * the close event), or select Cancel.
 	 *
 	 * @extends sap.m.DateTimeField
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @public
@@ -1344,7 +1344,7 @@ sap.ui.define([
 
 			sFormattedDate = this._getPickerParser().format(
 				oDate,
-				this._getTimezone(true)
+				sap.ui.getCore().getConfiguration().getTimezone()
 			);
 			oDate = this._getPickerParser().parse(sFormattedDate, TimezoneUtil.getLocalTimezone())[0];
 
@@ -1358,7 +1358,7 @@ sap.ui.define([
 
 			sFormattedDate = this._getPickerParser().format(
 				oFocusDate,
-				this._getTimezone(true)
+				sap.ui.getCore().getConfiguration().getTimezone()
 			);
 			oFocusDate = this._getPickerParser().parse(sFormattedDate, TimezoneUtil.getLocalTimezone())[0];
 
@@ -1404,7 +1404,7 @@ sap.ui.define([
 		var sFormattedDate = this._getPickerParser().format(oDate, TimezoneUtil.getLocalTimezone());
 		var oParts = this._getPickerParser().parse(
 			sFormattedDate,
-			this._getTimezone(true)
+			sap.ui.getCore().getConfiguration().getTimezone()
 		);
 		oDate = oParts && oParts[0];
 
@@ -1446,10 +1446,6 @@ sap.ui.define([
 		}
 
 		this._selectDate();
-	};
-
-	DatePicker.prototype._getTimezone = function(bUseDefaultAsFallback) {
-		return sap.ui.getCore().getConfiguration().getTimezone();
 	};
 
 	/* sets cursor inside the input in order to focus it */

@@ -8,7 +8,7 @@
  *
  * @name sap.ui.comp.smartfield.type.Int64.
  * @author SAP SE
- * @version 1.102.1
+ * @version 1.102.0
  * @private
  * @since 1.31.0
  * @extends sap.ui.model.odata.type.Int64

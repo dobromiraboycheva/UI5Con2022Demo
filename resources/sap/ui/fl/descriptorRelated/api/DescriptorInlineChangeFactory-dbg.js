@@ -38,7 +38,7 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.fl.descriptorRelated.api.DescriptorInlineChangeFactory
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @deprecated Since version 1.76
 	 * @ui5-restricted sap.ui.rta, smart business

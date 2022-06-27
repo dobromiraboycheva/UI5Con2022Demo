@@ -22,7 +22,7 @@ sap.ui.define(['./CalloutBase', './library', './CalloutRenderer'],
 	 * @extends sap.ui.commons.CalloutBase
 	 *
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 *
 	 * @constructor
 	 * @public

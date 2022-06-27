@@ -28,7 +28,7 @@ sap.ui.define([
 	 * changes or other flex objects that need processing. If there is nothing to
 	 * process, any further flex processing is stopped to avoid runtime impact for end users.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @since 1.44
 	 * @namespace
 	 * @name sap.ui.fl.initial
@@ -39,7 +39,7 @@ sap.ui.define([
 	 * The <code>sap.ui.fl.initial.api</code> namespace contains public APIs that can be used
 	 * during app startup, e.g. to inherit classes to create their own logic for retrieving data for flexibility.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.initial.api
 	 * @public
@@ -50,7 +50,7 @@ sap.ui.define([
 	 * start a UI5 app for an end user with changes. Be aware that only the <code>api</code>
 	 * sub-namespace contains public and stable APIs.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.apply
 	 * @public
@@ -60,7 +60,7 @@ sap.ui.define([
 	 * The <code>sap.ui.fl.apply.api</code> namespace contains public APIs that can be used
 	 * during app startup, e.g. to wait for changes to be applied or to access the current variant.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.apply.api
 	 * @public
@@ -72,7 +72,7 @@ sap.ui.define([
 	 * by personalization dialogs or 'tools' like key user adaptation will be part of this namespace.
 	 * Be aware that only the <code>api</code> sub-namespace contains public and stable APIs.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.write
 	 * @public
@@ -81,7 +81,7 @@ sap.ui.define([
 	/**
 	 * The <code>sap.ui.fl.write.api</code> namespace contains public APIs to work with flex objects.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.write.api
 	 * @public
@@ -91,7 +91,7 @@ sap.ui.define([
 	 * The <code>sap.ui.fl.interfaces</code> namespace contains only interface jsdoc descriptions.
 	 * It does not contain running code.
 	 *
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @namespace
 	 * @name sap.ui.fl.interfaces
 	 * @public
@@ -144,13 +144,13 @@ sap.ui.define([
 	 * @namespace
 	 * @alias sap.ui.fl
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted UI5 controls, tools creating flexibility changes
 	 */
 	var thisLib = sap.ui.getCore().initLibrary({
 		name: "sap.ui.fl",
-		version: "1.102.1",
+		version: "1.102.0",
 		controls: [
 			"sap.ui.fl.variants.VariantManagement",
 			"sap.ui.fl.util.IFrame"

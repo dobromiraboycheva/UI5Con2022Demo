@@ -12,7 +12,7 @@ sap.ui.define([], function() {
 	 *
 	 * @namespace sap.ui.fl.interfaces.BaseLoadConnector
 	 * @since 1.79
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @public
 	 * @interface
 	 */

@@ -35,7 +35,7 @@ sap.ui.define([
 	 * @param {object} [mSettings] Initial settings for the new control
 	 * @class A field help used in the <code>FieldHelp</code> association in <code>FieldBase</code> controls to show a popover of conditions.
 	 * @extends sap.ui.mdc.field.FieldHelpBase
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @ui5-restricted sap.ui.mdc.field.FieldBase, sap.fe

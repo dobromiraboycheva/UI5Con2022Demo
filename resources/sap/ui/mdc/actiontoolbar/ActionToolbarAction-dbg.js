@@ -21,7 +21,7 @@ sap.ui.define([
 	 * @class The action for an {@link sap.ui.mdc.ActionToolbar ActionToolbar}) control
 	 * @extends sap.ui.core.Control
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @constructor
 	 * @private
 	 * @since 1.58

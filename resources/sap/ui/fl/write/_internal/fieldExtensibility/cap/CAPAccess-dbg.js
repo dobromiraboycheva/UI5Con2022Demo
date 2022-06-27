@@ -22,7 +22,7 @@ sap.ui.define([
 	 * @experimental Since 1.93
 	 * @private
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 */
 	var CAPAccess = {};
 

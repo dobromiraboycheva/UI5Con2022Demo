@@ -22,7 +22,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.fl.apply._internal.changes.descriptor.ui5.SetMinUI5Version
 	 * @experimental
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl.apply._internal
 	 */

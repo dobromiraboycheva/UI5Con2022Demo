@@ -46,7 +46,7 @@ sap.ui.define([
 	 *
 	 * @namespace sap.ui.fl.initial._internal.Storage
 	 * @since 1.67
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl
 	 */

@@ -13,7 +13,7 @@ sap.ui.define(["sap/ui/fl/changeHandler/MoveControls", "sap/ui/core/Core", "sap/
 	 * @constructor
 	 * @alias sap.uxap.changeHandler.MoveObjectPageSection
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @experimental Since 1.54
 	 */
 

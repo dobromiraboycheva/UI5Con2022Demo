@@ -61,7 +61,7 @@ sap.ui.define([
 			"sap.chart.data.Measure"
 		],
 		noLibraryCSS: true,
-		version: "1.102.1"
+		version: "1.102.0"
 	});
 
 	/**

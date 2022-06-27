@@ -5,7 +5,7 @@
 	<vendor>SAP SE</vendor>
 	<copyright>SAPUI5
  * (c) Copyright 2009-2022 SAP SE. All rights reserved.</copyright>
-	<version>1.102.1</version>
+	<version>1.102.0</version>
 
 	<documentation>Smart viz control based on Vizframe</documentation>
 

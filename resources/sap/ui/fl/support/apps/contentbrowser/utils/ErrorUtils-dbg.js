@@ -16,7 +16,7 @@ function (MessagePopoverItem, MessagePopover) {
 		 * @constructor
 		 * @alias sap.ui.fl.support.apps.contentbrowser.utils.ErrorUtils
 		 * @author SAP SE
-		 * @version 1.102.1
+		 * @version 1.102.0
 		 * @experimental Since 1.45
 		 */
 	var ErrorUtils = {};

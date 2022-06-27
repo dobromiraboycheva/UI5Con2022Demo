@@ -12,7 +12,7 @@ sap.ui.define([], function () {
 	 *
 	 * @namespace sap.ui.fl.initial._internal.connectors.Utils
 	 * @since 1.70
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @ui5-restricted sap.ui.fl.initial._internal, sap.ui.fl.write._internal
 	 */

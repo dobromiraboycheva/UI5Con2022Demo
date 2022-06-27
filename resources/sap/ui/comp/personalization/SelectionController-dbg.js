@@ -13,7 +13,7 @@ sap.ui.define(['./BaseController', 'sap/m/library', 'sap/ui/comp/library', './Ut
 	 * @class Table Personalization Controller
 	 * @extends sap.ui.comp.personalization.BaseController
 	 * @author SAP SE
-	 * @version 1.102.1
+	 * @version 1.102.0
 	 * @private
 	 * @since 1.34.0
 	 * @alias sap.ui.comp.SelectionController

@@ -23,7 +23,7 @@ sap.ui.define(['sap/ui/core/Core', 'sap/ui/core/library', 'sap/m/library'], func
 	 */
 	var thisLib = sap.ui.getCore().initLibrary({
 		name: "sap.ui.comp",
-		version: "1.102.1",
+		version: "1.102.0",
 		dependencies: [
 			"sap.ui.core",
 			"sap.m"

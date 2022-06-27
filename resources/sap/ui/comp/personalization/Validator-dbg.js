@@ -7,7 +7,7 @@
  * @namespace Provides validator functions for the personalization dialog
  * @name sap.ui.comp.personalization.Validator
  * @author SAP SE
- * @version 1.102.1
+ * @version 1.102.0
  * @private
  * @since 1.48.0
  */
