@@ -5,7 +5,7 @@
         "__metadata": {
           "id": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
           "uri": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
-          "type": "EmployeesNamespace.SAP__UnitOfMeasure"
+          "type": "ZSALESREPORT_CDS.SAP__UnitOfMeasure"
         },
         "UnitCode": "G",
         "ISOCode": "GRM",
@@ -41,7 +41,7 @@
         "__metadata" : {
             "id" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
             "uri" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
-            "type" : "EmployeesNamespace.SAP__UnitOfMeasure"
+            "type" : "ZSALESREPORT_CDS.SAP__UnitOfMeasure"
         },
         "UnitCode" : "%",
         "ISOCode" : "P1",
