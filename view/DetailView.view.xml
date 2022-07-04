@@ -39,7 +39,7 @@
         <IconTabBar selectedKey="headerView" id="iconTabBar" class="sapUiResponsiveContentPadding">
           <items>
             <IconTabFilter key="europe" text="Europe">
-              <smartForm:SmartForm id="smartFormEurope" title="" editable="false" editTogglable="true">
+              <smartForm:SmartForm id="smartFormEurope" title="" editable="false" editTogglable="true" editToggled="handleEditToggledEurope">
                 <smartForm:layout>
                   <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
                 </smartForm:layout>
@@ -71,7 +71,7 @@
               </smartForm:SmartForm>
             </IconTabFilter>
             <IconTabFilter key="asia" text="Asia">
-              <smartForm:SmartForm id="smartFormAsia" title="" editable="false" editTogglable="true">
+              <smartForm:SmartForm id="smartFormAsia" title="" editable="false" editTogglable="true" editToggled="handleEditToggledAsia">
                 <smartForm:layout>
                   <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
                 </smartForm:layout>
@@ -103,7 +103,7 @@
               </smartForm:SmartForm>
             </IconTabFilter>
             <IconTabFilter key="america" text="America">
-              <smartForm:SmartForm id="smartFormAmerica" title="" editable="false" editTogglable="true">
+              <smartForm:SmartForm id="smartFormAmerica" title="" editable="false" editTogglable="true" editToggled="handleEditToggledAmerica">
                 <smartForm:layout>
                   <smartForm:ColumnLayout columnsM="1" columnsL="2" columnsXL="3"/>
                 </smartForm:layout>
@@ -136,6 +136,11 @@
             </IconTabFilter>
           </items>
         </IconTabBar>
+        <Bar>
+            <contentRight>
+                <Button id="button" type="Emphasized" text="Save" visible="false" press="handleSaveButtonPress"/>
+            </contentRight>
+        </Bar>
       </content>
     </Page>
   </App>

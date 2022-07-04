@@ -14,9 +14,9 @@
       },
       {
         "__metadata": {
-          "id": "testService.SAP__Currencies/SAP__Currencies('USD')",
-          "uri": "testService.SAP__Currencies/SAP__Currencies('USD')",
-          "type": "EmployeesNamespace.SAP__Currency"
+          "id": "salesreport.SAP__Currencies/SAP__Currencies('USD')",
+          "uri": "salesreport.SAP__Currencies/SAP__Currencies('USD')",
+          "type": "ZSALESREPORT_CDS.SAP__Currency"
         },
         "CurrencyCode": "USD",
         "ISOCode": "USD",
@@ -25,9 +25,9 @@
       },
       {
         "__metadata": {
-          "id": "testService.SAP__Currencies/SAP__Currencies('INR')",
-          "uri": "testService.SAP__Currencies/SAP__Currencies('INR')",
-          "type": "EmployeesNamespace.SAP__Currency"
+          "id": "salesreport.SAP__Currencies/SAP__Currencies('INR')",
+          "uri": "salesreport.SAP__Currencies/SAP__Currencies('INR')",
+          "type": "ZSALESREPORT_CDS.SAP__Currency"
         },
         "CurrencyCode": "INR",
         "ISOCode": "INR",

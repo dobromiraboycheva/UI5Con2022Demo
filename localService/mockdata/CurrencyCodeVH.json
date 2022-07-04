@@ -22,8 +22,9 @@
       },
       {
         "__metadata": {
-          "uri": "testService.CurrencyCodeVH/StringVH('INR')",
-          "type": "MyNameSpace.CurrencyCodeVH"
+          "id": "salesreport.SalesReport/CurrencyCodeVH('INR')",
+          "uri": "salesreport.SalesReport/CurrencyCodeVH('INR')",
+          "type": "ZSALESREPORT_CDS.CurrencyCodeVHType"
         },
         "CURR": "INR",
         "DESCR": "Indian Rupee"

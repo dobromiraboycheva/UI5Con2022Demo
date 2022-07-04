@@ -3,8 +3,8 @@
     "results": [
       {
         "__metadata": {
-          "id": "testService.SAP__Units/SAP__UnitsOfMeasure('G')",
-          "uri": "testService.SAP__Units/SAP__UnitsOfMeasure('G')",
+          "id": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
+          "uri": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
           "type": "EmployeesNamespace.SAP__UnitOfMeasure"
         },
         "UnitCode": "G",
@@ -36,6 +36,30 @@
         "ExternalCode": "MG",
         "Text": "Milligram",
         "DecimalPlaces": 3
+      },
+      {
+        "__metadata" : {
+            "id" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
+            "uri" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
+            "type" : "EmployeesNamespace.SAP__UnitOfMeasure"
+        },
+        "UnitCode" : "%",
+        "ISOCode" : "P1",
+        "ExternalCode" : "%",
+        "Text" : "Percentage",
+        "DecimalPlaces" : 0
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/SAP__UnitsOfMeasure('PCS')",
+          "uri": "salesreport.SalesReport/SAP__UnitsOfMeasure('PCS')",
+          "type": "ZSALESREPORT_CDS.SAP__UnitsOfMeasure"
+        },
+        "UnitCode": "PCS",
+        "ISOCode": "PCS",
+        "ExternalCode": "PCS",
+        "Text": "Pices",
+        "DecimalPlaces": 0
       }
     ]
   }
