@@ -23,7 +23,7 @@
         <Property Name="SoldPercentUnit" Type="Edm.String" MaxLength="1" sap:label="Sold Percentage Unit"
                   sap:semantics="unit-of-measure"/>
 
-        <Property Name="Quantity" Type="Edm.String" Nullable="true" sap:unit="UnitCode" Precision="13" Scale="6"
+        <Property Name="Quantity" Type="Edm.Decimal" Nullable="true" sap:unit="UnitCode" Precision="13" Scale="6"
                   sap:label="Quantity available in warehouse" sap:updatable="true"/>
         <Property Name="UnitCode" Type="Edm.String" Nullable="false" sap:semantics="unit-of-measure" MaxLength="3"
                   sap:label="UnitCode" sap:updatable="true"/>

@@ -237,11 +237,11 @@
               </Annotation>
             </Record>
             <Record Type="UI.DataField">
-              <PropertyValue Property="Value" Path="Produced"/>
+              <PropertyValue Property="Value" Path="ProductName"/>
               <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
             <Record Type="UI.DataField">
-              <PropertyValue Property="Value" Path="ProductName"/>
+              <PropertyValue Property="Value" Path="Produced"/>
               <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
             </Record>
             <Record Type="UI.DataField">
