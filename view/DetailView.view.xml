@@ -136,9 +136,9 @@
             </IconTabFilter>
           </items>
         </IconTabBar>
-        <Bar>
+        <Bar id="footerBar" visible="false">
             <contentRight>
-                <Button id="button" type="Emphasized" text="Save" visible="false" press="handleSaveButtonPress"/>
+                <Button id="button" type="Emphasized" text="Save"  press="handleSaveButtonPress"/>
             </contentRight>
         </Bar>
       </content>

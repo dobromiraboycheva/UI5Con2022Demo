@@ -20,12 +20,12 @@ sap.ui.define(
       },
       handleEditToggled: function (sSmartFormId) {
         var oSmartForm = this.getView().byId(sSmartFormId),
-        oButton = this.getView().byId("button");
+        oFooterBar = this.getView().byId("footerBar");
 
         if (oSmartForm.getEditable()) {
-          oButton.setVisible(true);
+            oFooterBar.setVisible(true);
         } else {
-            oButton.setVisible(false);
+            oFooterBar.setVisible(false);
         }
       },
       handleEditToggledEurope: function () {
@@ -40,6 +40,12 @@ sap.ui.define(
       handleSaveButtonPress:  function () {
         var sText = "Saved";
         MessageToast.show(sText);
+        var oSmartFormEurope = this.getView().byId("smartFormEurope"),
+        oSmartFormAmerica = this.getView().byId("smartFormAmerica"),
+        oSmartFormAsia = this.getView().byId("smartFormAsia");
+        oSmartFormEurope.setEditable(false);
+        oSmartFormAmerica.setEditable(false);
+        oSmartFormAsia.setEditable(false);
       }
     });
   }
