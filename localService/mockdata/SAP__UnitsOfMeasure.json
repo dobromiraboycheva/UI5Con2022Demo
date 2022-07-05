@@ -35,7 +35,7 @@
         "ISOCode": "MGM",
         "ExternalCode": "MG",
         "Text": "Milligram",
-        "DecimalPlaces": 3
+        "DecimalPlaces": 2
       },
       {
         "__metadata" : {
@@ -47,7 +47,7 @@
         "ISOCode" : "P1",
         "ExternalCode" : "%",
         "Text" : "Percentage",
-        "DecimalPlaces" : 0
+        "DecimalPlaces" : 3
       },
       {
         "__metadata": {
