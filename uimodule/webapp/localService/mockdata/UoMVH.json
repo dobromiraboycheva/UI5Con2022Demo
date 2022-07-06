@@ -1,0 +1,52 @@
+{
+  "d": {
+    "__count": "9",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('KG')",
+          "uri": "salesreport.SalesReport/UoMVH('KG')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "KG",
+        "UOMDESCR": "Kilogram"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('MG')",
+          "uri": "salesreport.SalesReport/UoMVH('MG')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "MG",
+        "UOMDESCR": "Milligram"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('G')",
+          "uri": "salesreport.SalesReport/UoMVH('G')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "G",
+        "UOMDESCR": "Gram"
+      },
+      {
+        "__metadata" : {
+            "id" : "salesreport.SalesReport/UoMVH('%25')",
+            "uri" : "salesreport.SalesReport/UoMVH('%25')",
+            "type" : "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY" : "%",
+        "UOMDESCR" : "Percentage"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/UoMVH('PCS')",
+          "uri": "salesreport.SalesReport/UoMVH('PCS')",
+          "type": "ZSALESREPORT_CDS.UoMVHType"
+        },
+        "UOMKEY": "PCS",
+        "UOMDESCR": "Pices"
+      }
+    ]
+  }
+}

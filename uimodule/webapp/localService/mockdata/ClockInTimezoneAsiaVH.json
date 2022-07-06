@@ -1,0 +1,34 @@
+{
+  "d": {
+    "__count": "7",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Kolkata')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Kolkata')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneAsiaVHType"
+        },
+        "ClockInTimezoneAsiaKEY": "Asia/Kolkata",
+        "ClockInTimezoneAsiaDESCR": "Asia/Kolkata"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Bangkok')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Bangkok')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneAsiaKEY": "Asia/Bangkok",
+        "ClockInTimezoneAsiaDESCR": "Asia/Bangkok"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Shanghai')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAsiaVH('Asia/Shanghai')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneAsiaKEY": "Asia/Shanghai",
+        "ClockInTimezoneAsiaDESCR": "Asia/Shanghai"
+      }
+    ]
+  }
+}

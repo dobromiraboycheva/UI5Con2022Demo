@@ -1,0 +1,39 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/SAP__Currencies('EUR')",
+          "uri": "salesreport.SalesReport/SAP__Currencies('EUR')",
+          "type": "ZSALESREPORT_CDS.SAP__Currency"
+        },
+        "CurrencyCode": "EUR",
+        "ISOCode": "",
+        "Text": "Euro",
+        "DecimalPlaces": 2
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SAP__Currencies/SAP__Currencies('USD')",
+          "uri": "salesreport.SAP__Currencies/SAP__Currencies('USD')",
+          "type": "ZSALESREPORT_CDS.SAP__Currency"
+        },
+        "CurrencyCode": "USD",
+        "ISOCode": "USD",
+        "Text": "US Dollar",
+        "DecimalPlaces": 4
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SAP__Currencies/SAP__Currencies('INR')",
+          "uri": "salesreport.SAP__Currencies/SAP__Currencies('INR')",
+          "type": "ZSALESREPORT_CDS.SAP__Currency"
+        },
+        "CurrencyCode": "INR",
+        "ISOCode": "INR",
+        "Text": "Rupee",
+        "DecimalPlaces": 2
+      }
+    ]
+  }
+}

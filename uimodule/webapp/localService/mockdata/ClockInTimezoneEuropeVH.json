@@ -1,0 +1,34 @@
+{
+  "d": {
+    "__count": "7",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/Sofia')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/Sofia')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneEuropeKEY": "Europe/Sofia",
+        "ClockInTimezoneEuropeDESCR": "Europe/Sofia"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/Berlin')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/Berlin')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneEuropeKEY": "Europe/Berlin",
+        "ClockInTimezoneEuropeDESCR": "Europe/Berlin"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/London')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneEuropeVH('Europe/London')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneEuropeKEY": "Europe/London",
+        "ClockInTimezoneEuropeDESCR": "Europe/London"
+      }
+    ]
+  }
+}

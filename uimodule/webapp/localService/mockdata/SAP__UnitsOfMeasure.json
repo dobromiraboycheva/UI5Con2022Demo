@@ -1,0 +1,66 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
+          "uri": "salesreport.SAP__Units/SAP__UnitsOfMeasure('G')",
+          "type": "ZSALESREPORT_CDS.SAP__UnitOfMeasure"
+        },
+        "UnitCode": "G",
+        "ISOCode": "GRM",
+        "ExternalCode": "G",
+        "Text": "Gram",
+        "DecimalPlaces": 3
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/SAP__UnitsOfMeasure('KG')",
+          "uri": "salesreport.SalesReport/SAP__UnitsOfMeasure('KG')",
+          "type": "ZSALESREPORT_CDS.SAP__UnitsOfMeasure"
+        },
+        "UnitCode": "KG",
+        "ISOCode": "KGM",
+        "ExternalCode": "KG",
+        "Text": "Kilogram",
+        "DecimalPlaces": 3
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/SAP__UnitsOfMeasure('MG')",
+          "uri": "salesreport.SalesReport/SAP__UnitsOfMeasure('MG')",
+          "type": "ZSALESREPORT_CDS.SAP__UnitsOfMeasure"
+        },
+        "UnitCode": "MG",
+        "ISOCode": "MGM",
+        "ExternalCode": "MG",
+        "Text": "Milligram",
+        "DecimalPlaces": 2
+      },
+      {
+        "__metadata" : {
+            "id" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
+            "uri" : "salesreport.SAP__Units/SAP__UnitsOfMeasure('%25')",
+            "type" : "ZSALESREPORT_CDS.SAP__UnitOfMeasure"
+        },
+        "UnitCode" : "%",
+        "ISOCode" : "P1",
+        "ExternalCode" : "%",
+        "Text" : "Percentage",
+        "DecimalPlaces" : 3
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/SAP__UnitsOfMeasure('PCS')",
+          "uri": "salesreport.SalesReport/SAP__UnitsOfMeasure('PCS')",
+          "type": "ZSALESREPORT_CDS.SAP__UnitsOfMeasure"
+        },
+        "UnitCode": "PCS",
+        "ISOCode": "PCS",
+        "ExternalCode": "PCS",
+        "Text": "Pices",
+        "DecimalPlaces": 0
+      }
+    ]
+  }
+}

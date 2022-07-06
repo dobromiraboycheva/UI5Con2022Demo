@@ -1,0 +1,34 @@
+{
+  "d": {
+    "__count": "9",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/CurrencyCodeVH('EUR')",
+          "uri": "salesreport.SalesReport/CurrencyCodeVH('EUR')",
+          "type": "ZSALESREPORT_CDS.CurrencyCodeVHType"
+        },
+        "CURR": "EUR",
+        "DESCR": "European Euro"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/CurrencyCodeVH('USD')",
+          "uri": "salesreport.SalesReport/CurrencyCodeVH('USD')",
+          "type": "ZSALESREPORT_CDS.CurrencyCodeVHType"
+        },
+        "CURR": "USD",
+        "DESCR": "United States Dollar"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/CurrencyCodeVH('INR')",
+          "uri": "salesreport.SalesReport/CurrencyCodeVH('INR')",
+          "type": "ZSALESREPORT_CDS.CurrencyCodeVHType"
+        },
+        "CURR": "INR",
+        "DESCR": "Indian Rupee"
+      }
+    ]
+  }
+}

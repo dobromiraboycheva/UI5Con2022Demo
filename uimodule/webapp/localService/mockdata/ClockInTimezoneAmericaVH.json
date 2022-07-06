@@ -1,0 +1,34 @@
+{
+  "d": {
+    "__count": "7",
+    "results": [
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/Chicago')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/Chicago')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneAmericaKEY": "America/Chicago",
+        "ClockInTimezoneAmericaDESCR": "America/Chicago"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/Los_Angeles')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/Los_Angeles')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneAmericaKEY": "America/Los_Angeles",
+        "ClockInTimezoneAmericaDESCR": "America/Los_Angeles"
+      },
+      {
+        "__metadata": {
+          "id": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/New_York')",
+          "uri": "salesreport.SalesReport/ClockInTimezoneAmericaVH('America/New_York')",
+          "type": "ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"
+        },
+        "ClockInTimezoneAmericaKEY": "America/New_York",
+        "ClockInTimezoneAmericaDESCR": "America/New_York"
+      }
+    ]
+  }
+}

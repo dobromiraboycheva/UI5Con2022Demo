@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<edmx:Edmx
+  Version="1.0"
+  xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+  xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+  xmlns:sap="http://www.sap.com/Protocols/SAPData"
+>
+  <edmx:DataServices m:DataServiceVersion="2.0">
+    <Schema Namespace="ZSALESREPORT_CDS" xml:lang="en" sap:schema-version="1"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="ZSALESREPORTType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ProductCode"/>
+        </Key>
+        <Property Name="ProductCode" Type="Edm.String" Nullable="false" sap:text="ProductName" MaxLength="10"
+                  sap:label="Product Code" sap:value-list="standard"/>
+        <Property Name="ProductName" Type="Edm.String" Nullable="false" sap:label="Product Name" sap:updatable="true"/>
+        <Property Name="Sold" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="Unit" sap:label="Sold"/>
+        <Property Name="SoldPercent" Type="Edm.Decimal" Precision="3" Scale="3" sap:unit="SoldPercentUnit"
+                  sap:label="Sold Percentage"/>
+        <Property Name="Produced" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="Unit" sap:label="Produced"/>
+        <Property Name="Unit" Type="Edm.String" MaxLength="3" sap:label="Unit" sap:semantics="unit-of-measure"/>
+        <Property Name="SoldPercentUnit" Type="Edm.String" MaxLength="1" sap:label="Sold Percentage Unit"
+                  sap:semantics="unit-of-measure"/>
+
+        <Property Name="Quantity" Type="Edm.Decimal" Nullable="true" sap:unit="UnitCode" Precision="13" Scale="6"
+                  sap:label="Quantity available in warehouse" sap:updatable="true"/>
+        <Property Name="UnitCode" Type="Edm.String" Nullable="false" sap:semantics="unit-of-measure" MaxLength="3"
+                  sap:label="UnitCode" sap:updatable="true"/>
+
+        <Property Name="Currency" Type="Edm.Decimal" Nullable="true" sap:unit="CurrencyCode" sap:label="Cost"
+                  sap:updatable="true" sap:sortable="false" Precision="13" Scale="6"/>
+        <Property Name="CurrencyCode" Type="Edm.String" MaxLength="3" sap:label="CurrencyCode" sap:updatable="true"
+                  sap:semantics="currency-code"/>
+
+        <Property Name="ProductionTimeEurope" Type="Edm.DateTimeOffset" sap:updatable="true"
+                  sap:label="Time in Europe"/>
+        <Property Name="ProductionTimeAsia" Type="Edm.DateTimeOffset" sap:updatable="true" sap:label="Time in Asia"/>
+        <Property Name="ProductionTimeAmerica" Type="Edm.DateTimeOffset" sap:updatable="true"
+                  sap:label="Time in America"/>
+
+        <Property Name="ClockInTimezoneEurope" Type="Edm.String"/>
+        <Property Name="ClockInTimezoneAsia" Type="Edm.String"/>
+        <Property Name="ClockInTimezoneAmerica" Type="Edm.String"/>
+
+        <Property Name="DateProduction" Type="Edm.DateTime" sap:display-format="Date"
+                  sap:filter-restriction="single-value" sap:label="Date of Production"/>
+        <Property Name="DocumentDate" Type="Edm.DateTime" sap:filter-restriction="interval" sap:label="Document Date"/>
+        <Property Name="CreationDateTime" Type="Edm.DateTimeOffset" sap:filter-restriction="interval"
+                  sap:label="Creation Date/Time"/>
+      </EntityType>
+
+      <EntityType Name="ProductCodeVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ProductCode"/>
+        </Key>
+        <Property Name="ProductCode" Type="Edm.String" Nullable="false" sap:text="ProductName" MaxLength="10"
+                  sap:label="Product Code"/>
+        <Property Name="ProductName" Type="Edm.String" Nullable="false" sap:label="Product Name"/>
+      </EntityType>
+
+      <EntityType Name="ClockInTimezoneEuropeVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneEuropeKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneEuropeKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneEuropeDESCR" Type="Edm.String" sap:label="Timezone"/>
+      </EntityType>
+      <EntityType Name="ClockInTimezoneAsiaVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneAsiaKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneAsiaKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneAsiaDESCR" Type="Edm.String" sap:label="Timezone"/>
+      </EntityType>
+      <EntityType Name="ClockInTimezoneAmericaVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="ClockInTimezoneAmericaKEY"/>
+        </Key>
+        <Property Name="ClockInTimezoneAmericaKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
+        <Property Name="ClockInTimezoneAmericaDESCR" Type="Edm.String" sap:label="Timezone"/>
+      </EntityType>
+
+      <EntityType Name="UoMVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="UOMKEY"/>
+        </Key>
+        <Property Name="UOMKEY" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="UoM"/>
+        <Property Name="UOMDESCR" Type="Edm.String" sap:label="Currency"/>
+      </EntityType>
+      <EntityType Name="SAP__UnitsOfMeasure" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="UnitCode"/>
+        </Key>
+        <Property Name="UnitCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Internal UoM"
+                  sap:semantics="unit-of-measure"/>
+        <Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO Code"/>
+        <Property Name="ExternalCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="Commercial"/>
+        <Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="30" sap:label="UoM Text"/>
+        <Property Name="DecimalPlaces" Type="Edm.Int16" sap:label="Decimal Places"/>
+      </EntityType>
+
+      <EntityType Name="CurrencyCodeVHType" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="CURR"/>
+        </Key>
+        <Property Name="CURR" Type="Edm.String" Nullable="false" MaxLength="20" sap:label="ISO Currecy"/>
+        <Property Name="DESCR" Type="Edm.String" sap:label="Currency"/>
+      </EntityType>
+      <EntityType Name="SAP__Currency" sap:content-version="1">
+        <Key>
+          <PropertyRef Name="CurrencyCode"/>
+        </Key>
+        <Property Name="CurrencyCode" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Currency"
+                  sap:semantics="currency-code"/>
+        <Property Name="ISOCode" Type="Edm.String" Nullable="false" MaxLength="3" sap:label="ISO Code"/>
+        <Property Name="Text" Type="Edm.String" Nullable="false" MaxLength="15" sap:label="Short Text"/>
+        <Property Name="DecimalPlaces" Type="Edm.Byte" Nullable="false" sap:label="Decimals"/>
+      </EntityType>
+
+      <EntityContainer Name="ZSALESREPORT_CDS_Entities" m:IsDefaultEntityContainer="true"
+                       sap:supported-formats="atom json xlsx">
+        <EntitySet Name="ZSALESREPORT" EntityType="ZSALESREPORT_CDS.ZSALESREPORTType" sap:updatable="true"
+                   sap:content-version="1"/>
+        <EntitySet Name="ProductCodeVH" EntityType="ZSALESREPORT_CDS.ProductCodeVHType"/>
+        <EntitySet Name="UoMVH" EntityType="ZSALESREPORT_CDS.UoMVHType"/>
+        <EntitySet Name="ClockInTimezoneEuropeVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneEuropeVHType"/>
+        <EntitySet Name="ClockInTimezoneAsiaVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneAsiaVHType"/>
+        <EntitySet Name="ClockInTimezoneAmericaVH" EntityType="ZSALESREPORT_CDS.ClockInTimezoneAmericaVHType"/>
+        <EntitySet Name="SAP__UnitsOfMeasure" EntityType="ZSALESREPORT_CDS.SAP__UnitsOfMeasure"/>
+        <EntitySet Name="CurrencyCodeVH" EntityType="ZSALESREPORT_CDS.CurrencyCodeVHType"/>
+        <EntitySet Name="SAP__Currencies" EntityType="ZSALESREPORT_CDS.SAP__Currency"/>
+      </EntityContainer>
+      <atom:link rel="self" href="https://my.sampleservice.com:44300/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata"
+                 xmlns:atom="http://www.w3.org/2005/Atom"/>
+      <atom:link rel="latest-version"
+                 href="https://my.sampleservice.com:44300/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata"
+                 xmlns:atom="http://www.w3.org/2005/Atom"/>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

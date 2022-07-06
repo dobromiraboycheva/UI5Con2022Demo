@@ -1,0 +1,274 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+  <edmx:Reference
+    Uri="/services_kiw/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/UI.xml">
+    <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="http://docs.oasis-open.org/odata/odata/v4.0/cs01/vocabularies/Org.OData.Measures.V1.xml">
+    <edmx:Include Alias="CQP" Namespace="Org.OData.Measures.V1"/>
+  </edmx:Reference>
+  <edmx:Reference
+    Uri="/services_kiw/sap/bc/ui5_ui5/ui2/ushell/resources/sap/ushell/components/factsheet/vocabularies/Common.xml">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/services_kiw/sap/opu/odata/sap/ZSALESREPORT_CDS/$metadata">
+    <edmx:Include Alias="ZSALESREPORT_CDS" Namespace="ZSALESREPORT_CDS"/>
+  </edmx:Reference>
+  <edmx:Reference
+    Uri="http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Alias="ZSALESREPORT_CDSAnnotation"
+            Namespace="sap.cbesh.cestbon.ZSALESREPORT_CDSAnnotation">
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductCode">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="Product Code"/>
+            <PropertyValue Property="CollectionPath" String="ProductCodeVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ProductCode"/>
+                  <PropertyValue Property="ValueListProperty" String="ProductCode"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ProductName"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORT_CDS_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.CodeList.v1.UnitsOfMeasure">
+          <Record>
+            <PropertyValue Property="Url" String="./$metadata"/>
+            <PropertyValue Property="CollectionPath" String="SAP__UnitsOfMeasure"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="com.sap.vocabularies.CodeList.v1.CurrencyCodes">
+          <Record>
+            <PropertyValue Property="Url" String="./$metadata"/>
+            <PropertyValue Property="CollectionPath" String="SAP__Currencies"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.SAP__Currency/CurrencyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="Text"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.UnitSpecificScale" Path="DecimalPlaces"/>
+        <Annotation Term="com.sap.vocabularies.CodeList.v1.StandardCode" Path="ISOCode"/>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.SAP__UnitsOfMeasure/UnitCode"
+                   xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.Text" Path="Text"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.UnitSpecificScale" Path="DecimalPlaces"/>
+        <Annotation Term="com.sap.vocabularies.CodeList.v1.StandardCode" Path="ISOCode"/>
+        <Annotation Term="com.sap.vocabularies.CodeList.v1.ExternalCode" Path="ExternalCode"/>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/UnitCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="Unit"/>
+            <PropertyValue Property="CollectionPath" String="UoMVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="UnitCode"/>
+                  <PropertyValue Property="ValueListProperty" String="UOMKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="UOMDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/CurrencyCode"
+                   xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="Currency"/>
+            <PropertyValue Property="CollectionPath" String="CurrencyCodeVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="CurrencyCode"/>
+                  <PropertyValue Property="ValueListProperty" String="CURR"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="DESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductionTimeEurope"
+                   xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneEurope"/>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneEurope" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneEurope"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneEuropeVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneEurope"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneEuropeKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneEuropeDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductionTimeAsia"
+                   xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneAsia"/>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneAsia" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneAsia"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneAsiaVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneAsia"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAsiaKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAsiaDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductionTimeAmerica"
+                   xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.Timezone" Path="ClockInTimezoneAmerica"/>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ClockInTimezoneAmerica" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueListWithFixedValues" Bool="true"/>
+        <Annotation Term="com.sap.vocabularies.Common.v1.ValueList">
+          <Record>
+            <PropertyValue Property="Label" String="ClockInTimezoneAmerica"/>
+            <PropertyValue Property="CollectionPath" String="ClockInTimezoneAmericaVH"/>
+            <PropertyValue Property="SearchSupported" Bool="true"/>
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterInOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="ClockInTimezoneAmerica"/>
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAmericaKEY"/>
+                </Record>
+                <Record Type="com.sap.vocabularies.Common.v1.ValueListParameterDisplayOnly">
+                  <PropertyValue Property="ValueListProperty" String="ClockInTimezoneAmericaDESCR"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/Unit">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/SoldPercentUnit">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductName">
+        <Annotation Term="UI.DataFieldDefault">
+          <Record Type="UI.DataField">
+            <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType/ProductCode">
+        <Annotation Term="Common.Text" Path="ProductName">
+          <Annotation Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextFirst"/>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="ZSALESREPORT_CDS.ZSALESREPORTType">
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ProductCode"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+              <Annotation Term="com.sap.vocabularies.HTML5.v1.CssDefaults">
+                <Record>
+                  <PropertyValue Property="width" String="230px"/>
+                </Record>
+              </Annotation>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="ProductName"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Produced"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Sold"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="SoldPercent"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Quantity"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="Currency"/>
+              <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+            </Record>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.DataPoint">
+          <Record>
+            <PropertyValue Path="Sold" Property="Value"/>
+            <PropertyValue Path="Produced" Property="MaximumValue"/>
+          </Record>
+        </Annotation>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

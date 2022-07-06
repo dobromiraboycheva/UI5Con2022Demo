@@ -1,0 +1,22 @@
+{
+  "generator-template-ui5-project": {
+    "projectname": "ui5con2022-smart-controls",
+    "namespaceUI5": "smart.controls.demo",
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "ui5libs": "Local resources (SAPUI5)",
+    "newdir": true,
+    "codeassist": true,
+    "namespaceURI": "smart/controls/demo",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
